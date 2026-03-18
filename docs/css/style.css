@@ -1632,3 +1632,19 @@ section { padding: var(--section-pad) 0; }
   .hero__title { font-size: 2rem; }
   .before-after-grid { grid-template-columns: 1fr; }
 }
+
+
+/* ── MOBILE HERO FIX (added by QA pass Mar 2026) ─────── */
+@media (max-width: 768px) {
+  .hero,
+  .hero-section,
+  .site-hero,
+  section.hero,
+  [class*="hero-wrap"],
+  [class*="hero-container"] {
+    min-height: auto !important;
+    padding-top: 3.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+  body { overflow-x: hidden; }
+}
