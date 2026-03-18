@@ -1648,3 +1648,34 @@ section { padding: var(--section-pad) 0; }
   }
   body { overflow-x: hidden; }
 }
+
+/* ── HERO TYPOGRAPHY FIX ON MOBILE (QA Mar 2026) ──────── */
+@media (max-width: 768px) {
+  .hero h1, .hero-section h1, section.hero h1 {
+    font-size: clamp(1.75rem, 7vw, 2.25rem) !important;
+    line-height: 1.2 !important;
+  }
+  .hero p, .hero-content p {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+  }
+  .hero-stats, .hero-numbers {
+    gap: 0.75rem !important;
+  }
+  .hero-stat-number, .stat-number {
+    font-size: 1.5rem !important;
+  }
+  .hero-content, .hero-inner {
+    padding: 2.5rem 1.5rem !important;
+    gap: 1rem !important;
+  }
+  .cta-buttons, .hero-ctas {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+  }
+  .cta-buttons a, .hero-ctas a, .btn {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+}
