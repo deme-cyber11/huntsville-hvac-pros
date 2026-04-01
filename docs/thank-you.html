@@ -2,24 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="preconnect" href="https://unpkg.com">
-    <link rel="preconnect" href="https://www.clarity.ms">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thank You | Huntsville HVAC Pros</title>
-  <meta name="description" content="Thank you for contacting Huntsville HVAC Pros. We'll be in touch shortly. Call (256) 215-9287 for immediate assistance.">
-  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Thank you for contacting Huntsville HVAC Pros. We'll be in touch shortly.">
   <link rel="canonical" href="https://huntsvillehvacpros.com/thank-you.html">
+  <meta name="robots" content="noindex">
+
+  <!-- Open Graph -->
   <meta property="og:title" content="Thank You | Huntsville HVAC Pros">
   <meta property="og:description" content="Thank you for contacting Huntsville HVAC Pros.">
   <meta property="og:url" content="https://huntsvillehvacpros.com/thank-you.html">
-  <meta property="og:image" content="https://huntsvillehvacpros.com/images/hvac-hero.jpg">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Huntsville HVAC Pros">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Thank You | Huntsville HVAC Pros">
   <meta name="twitter:description" content="Thank you for contacting Huntsville HVAC Pros.">
-  <meta name="twitter:image" content="https://huntsvillehvacpros.com/images/hvac-hero.jpg">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="css/style.v1.css">
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.v2.5.css">
+
   <!-- Microsoft Clarity -->
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -28,58 +35,110 @@
       y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "vqcd6y8eot");
   </script>
-<style>
-
-/* Floating CTA circles — injected by cta-strategy.py */
-.floating-cta{position:fixed;bottom:20px;right:20px;z-index:998;display:flex;flex-direction:column;gap:12px;transform:translateY(110px);opacity:0;transition:transform .5s cubic-bezier(.34,1.56,.64,1),opacity .4s ease;pointer-events:none}
-.floating-cta.visible{transform:translateY(0);opacity:1;pointer-events:auto}
-.floating-cta a{display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;color:#fff;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.25);transition:transform .2s ease,box-shadow .2s ease;position:relative}
-.floating-cta a:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(0,0,0,.3)}
-.fcta-call{background:#22c55e}
-.fcta-quote{background:var(--color-primary,var(--color-accent,#1a3a5c))}
-.fcta-label{position:absolute;right:64px;white-space:nowrap;background:rgba(0,0,0,.75);color:#fff;padding:5px 12px;border-radius:20px;font-size:.78rem;font-weight:600;opacity:0;pointer-events:none;transition:opacity .2s ease}
-.floating-cta a:hover .fcta-label{opacity:1}
-@media(min-width:769px){.floating-cta{display:none!important}}
-
-</style>
 </head>
 <body>
-<div class="top-bar"><div class="container"><div class="top-bar__inner"><div class="top-bar__left"><span>Huntsville HVAC Pros · (256) 215-9287</span></div></div></div></div>
-<header class="site-header"><div class="site-header__inner">
-  <a href="index.html" class="site-logo"><div class="site-logo__icon"><span style="font-family:inherit;font-size:1.3rem;font-weight:900;letter-spacing:-0.04em;color:#fff">HH</span></div><div class="site-logo__text"><span class="site-logo__name"><span class="logo-brand">Huntsville</span> <span class="logo-brand">Huntsville</span> Hvac Pros</span><span class="site-logo__tagline">Licensed &amp; Insured · Huntsville, AL</span></div></a>
-</div></header>
 
-<section style="padding:80px 0;text-align:center;">
-  <div class="container" style="max-width:640px;">
-    <div style="width:80px;height:80px;background:var(--success);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 32px;">
-      <img src="/images/icons/check.svg" alt="Checkmark" width="40" height="40" style="filter:brightness(0) invert(1);">
+<!-- ===== NAV ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="container site-header__inner">
+    <a href="/" class="site-logo">Huntsville <span>HVAC</span> Pros</a>
+    <nav class="site-nav" id="siteNav">
+      <a href="/services/ac-repair.html" class="nav-link">Services</a>
+      <a href="/about.html" class="nav-link">About</a>
+      <a href="/blog/" class="nav-link">Blog</a>
+      <a href="/faq.html" class="nav-link">FAQ</a>
+      <a href="/contact.html" class="nav-link">Contact</a>
+    </nav>
+    <a href="tel:+12562159287" class="btn btn-primary nav-cta">Call Now</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ===== THANK YOU ===== -->
+<section class="section thankyou">
+  <div class="container container--narrow" style="text-align: center; padding-top: 80px; padding-bottom: 80px;">
+
+    <div class="thankyou__icon">
+      <svg width="80" height="80" fill="none" stroke="#22c55e" stroke-width="2" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" stroke-opacity="0.3"/>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4"/>
+      </svg>
     </div>
-    <h1 style="font-size:2.2rem;margin-bottom:16px;">Thank You — We Got It!</h1>
-    <p style="font-size:1.1rem;color:var(--text-light);margin-bottom:32px;">Your request has been submitted. A member of our Huntsville team will contact you within 2 hours during business hours (Mon–Fri 7am–7pm, Sat 8am–5pm).</p>
-    <div class="info-box" style="text-align:left;margin-bottom:32px;">
-      <p><strong>Need service sooner?</strong> Call us directly at <a href="tel:+12562159287">(256) 215-9287</a>. We're available now.</p>
-    </div>
-    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-      <a href="tel:+12562159287" class="btn btn-primary"><img src="/images/icons/phone.svg" alt="" width="48" height="48">Call (256) 215-9287</a>
-      <a href="index.html" class="btn btn-outline">Back to Home</a>
-    </div>
+
+    <h1>Thank You!</h1>
+    <p style="font-size: 1.15rem; max-width: 520px; margin: 20px auto 32px;">We have received your message and will be in touch within 24 hours. For immediate assistance, call us at <a href="tel:+12562159287">(256) 215-9287</a>.</p>
+
+    <a href="/" class="btn btn-primary btn-lg">Return to Homepage</a>
+
   </div>
 </section>
 
-<footer class="site-footer"><div class="container"><div class="footer__bottom" style="justify-content:center;"><span>&copy; 2025 Huntsville HVAC Pros. All rights reserved.</span></div></div></footer>
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <a href="/" class="footer__brand">Huntsville <span>HVAC</span> Pros</a>
+        <p>Licensed, insured HVAC contractors serving Huntsville and Madison County. Honest service since 2009.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="#" aria-label="Google"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg></a>
+          <a href="#" aria-label="Yelp"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.926-4.308c.564-.832 1.836-.476 1.92.537l.325 3.898c.024.288-.096.564-.336.756l-.664.514zm-8.77 5.028l-1.2-4.896c-.24-.984.936-1.668 1.776-1.032l4.356 3.3c.528.396.384 1.236-.216 1.404l-4.272 1.2c-.168.048-.312.024-.444-.024v.048zm-2.088-6.372L5.262 8.622c-.66-.42-.444-1.404.324-1.5l5.1-.636c.456-.06.852.276.912.744l.576 4.656c.084.684-.768 1.056-1.26.528l-.612-.564v-.6zm-3.456 4.62l4.464-2.472c.888-.492 1.812.492 1.392 1.44l-2.148 4.86c-.276.624-1.14.66-1.356.06l-2.388-3.048c-.18-.228-.168-.528.036-.84zm6.024-10.356l.216 5.1c.036.864-1.044 1.248-1.596.564l-4.02-5.016c-.348-.432-.06-1.068.468-1.14l4.14-.516c.432-.06.768.276.792.708v.3z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services/ac-repair.html">AC Repair</a></li>
+          <li><a href="/services/ac-installation.html">AC Installation</a></li>
+          <li><a href="/services/heating.html">Heating</a></li>
+          <li><a href="/services/maintenance.html">Maintenance</a></li>
+          <li><a href="/services/emergency.html">Emergency</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/locations/madison.html">Service Areas</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <p><a href="tel:+12562159287">(256) 215-9287</a></p>
+        <p>info@huntsvillehvacpros.com</p>
+        <p>Serving Huntsville, Madison &amp; all of Madison County, AL</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 Huntsville HVAC Pros | <a href="/privacy.html">Privacy Policy</a> | <a href="/sitemap.xml">Sitemap</a></p>
+    </div>
+  </div>
+</footer>
 
-<div class="floating-cta" id="floating-cta">
-  <a href="tel:+12562159287" class="fcta-call" aria-label="Call Now"><span class="fcta-label">Call Now</span><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg></a>
-  <a href="/contact.html" class="fcta-quote" aria-label="Free Quote"><span class="fcta-label">Free Quote</span><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></a>
+<!-- ===== MOBILE CTA BAR ===== -->
+<div class="mobile-cta">
+  <a href="tel:+12562159287" class="mobile-cta__call">Call Now</a>
+  <a href="/contact.html" class="mobile-cta__estimate">Free Estimate</a>
 </div>
+
 <script>
-(function(){
-  var el=document.getElementById('floating-cta');
-  if(!el)return;
-  window.addEventListener('scroll',function(){
-    el.classList.toggle('visible',window.scrollY>80);
-  },{passive:true});
-})();
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 50);
+  }, {passive: true});
+
+  const navToggle = document.getElementById('navToggle');
+  const siteNav = document.getElementById('siteNav');
+  navToggle.addEventListener('click', () => {
+    siteNav.classList.toggle('mobile-open');
+    document.body.classList.toggle('nav-open');
+  });
 </script>
 </body>
 </html>

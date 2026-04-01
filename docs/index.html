@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-    <link rel="preload" href="/images/hero-main.webp" as="image" type="image/webp">
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="preconnect" href="https://unpkg.com">
-    <link rel="preconnect" href="https://www.clarity.ms">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Huntsville HVAC Pros | AC Repair & Heating Services | Huntsville, AL</title>
+
+  <!-- Preload / Preconnect -->
+  <link rel="preload" href="/images/hero-main.webp" as="image" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.clarity.ms">
+
+  <title>Huntsville HVAC Pros | AC Repair &amp; Heating Services | Huntsville, AL</title>
   <meta name="description" content="Huntsville's trusted HVAC company. Expert AC repair, installation, and heating services for Madison, Hampton Cove, Jones Valley, Meridianville & Harvest. Licensed, insured, 24/7 emergency service. Call (256) 215-9287.">
-  <meta name="keywords" content="HVAC Huntsville AL, AC repair Huntsville, air conditioning Huntsville Alabama, heating and cooling Huntsville, HVAC company Huntsville">
   <link rel="canonical" href="https://huntsvillehvacpros.com/">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Huntsville HVAC Pros | AC Repair & Heating Services">
+  <meta property="og:title" content="Huntsville HVAC Pros | AC Repair &amp; Heating Services">
   <meta property="og:description" content="Huntsville's trusted HVAC experts. Licensed, insured, 24/7 emergency service. Serving all Huntsville neighborhoods. Call (256) 215-9287.">
   <meta property="og:url" content="https://huntsvillehvacpros.com/">
   <meta property="og:type" content="website">
@@ -25,18 +27,20 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Huntsville HVAC Pros | AC Repair & Heating Services">
+  <meta name="twitter:title" content="Huntsville HVAC Pros | AC Repair &amp; Heating Services">
   <meta name="twitter:description" content="Huntsville's trusted HVAC experts. 24/7 emergency service. Call (256) 215-9287.">
   <meta name="twitter:image" content="https://huntsvillehvacpros.com/images/hvac-hero.jpg">
 
+  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="css/style.v1.css">
 
-  <!-- Google Analytics placeholder -->
-  <!-- Replace GA_MEASUREMENT_ID with your actual ID when ready -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script> -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
-  <!-- LocalBusiness + HVAC Schema -->
+  <!-- v2.5 Design System CSS -->
+  <link rel="stylesheet" href="css/style.v2.5.css">
+
+  <!-- HVACBusiness Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -79,23 +83,33 @@
     "paymentAccepted": ["Cash", "Check", "Credit Card", "Financing"],
     "hasCredential": {
       "@type": "EducationalOccupationalCredential",
-      "credentialCategory": "Alabama HVAC Contractor License — Alabama Licensing Board for General Contractors"
+      "credentialCategory": "EPA Certification"
     },
-    "sameAs": []
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "200",
+      "bestRating": "5"
+    }
   }
   </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "How much does HVAC repair cost in Huntsville, AL?", "acceptedAnswer": {"@type": "Answer", "text": "HVAC repair in Huntsville typically costs $150–$600 depending on the issue. Minor repairs like capacitor replacement run $150–$300, while compressor or coil replacements can reach $1,000–$2,500."}},
-    {"@type": "Question", "name": "How long does HVAC installation take in Huntsville?", "acceptedAnswer": {"@type": "Answer", "text": "A standard HVAC installation in Huntsville takes 4–8 hours for a single system. Larger homes or multi-zone systems may take 1–2 days."}},
-    {"@type": "Question", "name": "Do you offer emergency HVAC service in Huntsville?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, we connect Huntsville homeowners with HVAC contractors available 24/7 for emergency heating and cooling repairs."}},
-    {"@type": "Question", "name": "What areas near Huntsville do you serve?", "acceptedAnswer": {"@type": "Answer", "text": "We serve all of Huntsville and surrounding areas including Madison, Decatur, Athens, Hartselle, and the Tennessee Valley region."}}
-  ]
-}
-</script>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "How much does HVAC repair cost in Huntsville?", "acceptedAnswer": {"@type": "Answer", "text": "Most HVAC repairs in Huntsville range from $150\u2013$500 depending on the issue. We provide free diagnostic estimates so you know the cost before any work begins."}},
+      {"@type": "Question", "name": "Do you offer 24/7 emergency HVAC service?", "acceptedAnswer": {"@type": "Answer", "text": "Yes \u2014 we offer round-the-clock emergency HVAC service across Huntsville and Madison County. Call (256) 215-9287 anytime for immediate assistance."}},
+      {"@type": "Question", "name": "How often should I replace my HVAC system?", "acceptedAnswer": {"@type": "Answer", "text": "Most HVAC systems last 15\u201320 years with proper maintenance. If your system is over 10 years old and needs frequent repairs, replacement may be more cost-effective."}},
+      {"@type": "Question", "name": "Are your technicians licensed and insured?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. All our technicians are EPA-certified, fully licensed in Alabama, and carry comprehensive liability insurance for your protection."}},
+      {"@type": "Question", "name": "Do you offer financing for new HVAC installations?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, we offer flexible financing options with approved credit, including 0% APR plans for qualifying customers. Ask about our current promotions."}},
+      {"@type": "Question", "name": "What brands of HVAC equipment do you install?", "acceptedAnswer": {"@type": "Answer", "text": "We install and service all major brands including Carrier, Trane, Lennox, Rheem, and Goodman. We\u2019ll recommend the best fit for your home and budget."}}
+    ]
+  }
+  </script>
+
   <!-- Microsoft Clarity -->
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -107,477 +121,342 @@
 </head>
 <body>
 
-<!-- ===== TOP BAR ===== -->
-<div class="top-bar">
-  <div class="container">
-    <div class="top-bar__inner">
-      <div class="top-bar__left">
-        <span>
-          <img src="/images/icons/map-pin.svg" alt="" width="12" height="12" style="display:inline;vertical-align:middle;filter:invert(1);opacity:0.7;margin-right:4px">
-          Serving Huntsville, AL &amp; Surrounding Areas
-        </span>
-        <span>Mon–Fri 7am–7pm | Sat 8am–5pm</span>
-        <span class="top-bar__badge">24/7 Emergency</span>
-      </div>
-      <div class="top-bar__right">
-        <a href="tel:+12562159287">
-          <img src="/images/icons/phone.svg" alt="" width="12" height="12" style="display:inline;vertical-align:middle;filter:invert(1);opacity:0.7;margin-right:4px">
-          (256) 215-9287
-        </a>
-        <a href="mailto:info@huntsvillehvacpros.com">
-          <img src="/images/icons/mail.svg" alt="" width="12" height="12" style="display:inline;vertical-align:middle;filter:invert(1);opacity:0.7;margin-right:4px">
-          info@huntsvillehvacpros.com
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ===== HEADER ===== -->
-<header class="site-header">
-  <div class="site-header__inner">
-    <a href="/" class="site-logo">
-      <div class="site-logo__icon"><span style="font-family:inherit;font-size:1.3rem;font-weight:900;letter-spacing:-0.04em;color:#fff">HH</span></div>
-      <div class="site-logo__text">
-        <span class="site-logo__name"><span class="logo-brand">Huntsville</span> <span class="logo-brand">Huntsville</span> Hvac Pros</span>
-        <span class="site-logo__tagline">Licensed &amp; Insured · Huntsville, AL</span>
-      </div>
-    </a>
-
-    <nav class="site-nav" id="siteNav">
-      <button class="nav-close" id="navClose" aria-label="Close menu">
-        <img src="/images/icons/x.svg" alt="Close" width="48" height="48">
-      </button>
-      <div class="nav-item">
-        <a href="/" class="nav-link active">Home</a>
-      </div>
-      <div class="nav-item">
-        <a href="about.html" class="nav-link">About</a>
-      </div>
-      <div class="nav-item">
-        <a href="services/ac-repair.html" class="nav-link">
-          Services
-          <img src="/images/icons/chevron-down.svg" alt="" width="48" height="48">
-        </a>
-        <div class="nav-dropdown">
-          <a href="services/ac-repair.html">AC Repair</a>
-          <a href="services/ac-installation.html">AC Installation</a>
-          <a href="services/heating.html">Heating Services</a>
-          <a href="services/maintenance.html">Maintenance Plans</a>
-          <a href="services/emergency.html">Emergency Service</a>
-        </div>
-      </div>
-      <div class="nav-item">
-        <a href="locations/madison.html" class="nav-link">
-          Locations
-          <img src="/images/icons/chevron-down.svg" alt="" width="48" height="48">
-        </a>
-        <div class="nav-dropdown">
-          <a href="locations/madison.html">Madison</a>
-          <a href="locations/hampton-cove.html">Hampton Cove</a>
-          <a href="locations/jones-valley.html">Jones Valley</a>
-          <a href="locations/meridianville.html">Meridianville</a>
-          <a href="locations/harvest.html">Harvest</a>
-        </div>
-      </div>
-      <div class="nav-item">
-        <a href="faq.html" class="nav-link">FAQ</a>
-      </div>
-      <div class="nav-item">
-        <a href="blog/index.html" class="nav-link">Blog</a>
-      </div>
-      <div class="nav-item">
-        <a href="contact.html" class="nav-link">Contact</a>
-      </div>
-      <div class="nav-item nav-cta">
-        <a href="tel:+12562159287" class="nav-phone">
-          <img src="/images/icons/phone.svg" alt="" width="48" height="48">
-          (256) 215-9287
-        </a>
-      </div>
-    </nav>
-
-    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
-      <img src="/images/icons/menu.svg" alt="Menu" width="48" height="48">
+<!-- ===== NAV ===== -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="/" class="nav__logo">Huntsville <span>HVAC</span> Pros</a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="/services/ac-repair.html">Services</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/locations/madison.html">Areas</a></li>
+      <li><a href="/faq.html">FAQ</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="tel:+12562159287" class="nav__cta">Call Now</a></li>
+    </ul>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu">
+      <svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
     </button>
   </div>
-</header>
+</nav>
 
-<!-- ===== HERO ===== -->
+<!-- ===== 1. HERO ===== -->
 <section class="hero">
-  <div class="hero__inner">
+  <div class="hero__bg" style="background-image: url('/images/hero-main.webp')"></div>
+  <div class="hero__orb hero__orb--1"></div>
+  <div class="hero__orb hero__orb--2"></div>
+  <div class="hero__orb hero__orb--3"></div>
+  <div class="container">
     <div class="hero__content">
-      <span class="hero__label">Same-day service available · Huntsville &amp; surrounding areas · No surprise charges · We answer the phone</span>
-      <h1 class="hero__title">HVAC Repair &amp; Service in Huntsville — Same-Day Response. Honest Pricing. Free Estimates.</h1>
-      <p class="hero__subtitle">
-        AC or heat out? We respond within 2–4 hours, same day. Expert diagnostics, upfront pricing, and honest repair recommendations — no upsells, no mystery charges.
-      </p>
-      <div class="hero__actions">
-        <a href="tel:+12562159287" class="btn btn-primary btn-lg">
-          <img src="/images/icons/phone.svg" alt="" width="48" height="48">
+      <div class="hero__badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        Huntsville's #1 Rated HVAC Company
+      </div>
+      <h1 class="hero__title">Expert Heating &amp; Cooling <span>You Can Trust</span></h1>
+      <p class="hero__desc">From emergency repairs to full system installations — Huntsville's most trusted HVAC professionals keep your home comfortable year-round.</p>
+      <div class="hero__buttons">
+        <a href="tel:+12562159287" class="btn btn--primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           Call (256) 215-9287
         </a>
-        <a href="contact.html" class="btn btn-outline-white btn-lg">Get Free Estimate</a>
+        <a href="/services/ac-repair.html" class="btn btn--outline">Our Services
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <div class="hero__stat-num" data-count="15">15+</div>
+          <div class="hero__stat-label">Years Experience</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-num" data-count="3200">3,200+</div>
+          <div class="hero__stat-label">Projects Completed</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-num">4.9</div>
+          <div class="hero__stat-label">Google Rating</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-num">24/7</div>
+          <div class="hero__stat-label">Emergency Service</div>
+        </div>
       </div>
       <div class="hero__trust">
-        <div class="hero__trust-item">
-          <img src="/images/icons/shield-check.svg" alt="" width="48" height="48">
+        <div class="hero__trust-pill">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           Licensed &amp; Insured
         </div>
-        <div class="hero__trust-item">
-          <img src="/images/icons/clock.svg" alt="" width="48" height="48">
-          24/7 Emergency
+        <div class="hero__trust-pill">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          EPA Certified
         </div>
-        <div class="hero__trust-item">
-          <img src="/images/icons/award.svg" alt="" width="48" height="48">
-          15+ Years Experience
-        </div>
-        <div class="hero__trust-item">
-          <img src="/images/icons/badge-check.svg" alt="" width="48" height="48">
-          Financing Available
+        <div class="hero__trust-pill">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          200+ Five-Star Reviews
         </div>
       </div>
     </div>
-
-    <div class="hero__image-wrap">
-      <img
-        src="/images/hero-main.webp"
-        alt="HVAC technician servicing AC unit in Huntsville Alabama"
-        class="hero__image"
-        width="480" height="360"
-      >
-      <div class="hero__badge">
-        <img src="/images/icons/star.svg" alt="" width="48" height="48">
-        4.9 Stars · 300+ Huntsville Reviews
-      </div>
-    </div>
   </div>
 </section>
 
-<!-- ===== STATS BAR ===== -->
-<div class="stats-bar">
-  <div class="stats-bar__inner">
-    <div class="stat-item">
-      <span class="stat-item__number">15+</span>
-      <span class="stat-item__label">Years Serving Huntsville</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-item__number">3,800+</span>
-      <span class="stat-item__label">Systems Serviced</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-item__number">24/7</span>
-      <span class="stat-item__label">Emergency Response</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-item__number">100%</span>
-      <span class="stat-item__label">Satisfaction Guarantee</span>
-    </div>
-  </div>
-</div>
-
-<!-- PAS PROBLEM SECTION -->
-<section style="padding:60px 0;background:#fff;">
-  <div class="container" style="max-width:860px;margin:0 auto;padding:0 20px;">
-    <h2 style="font-size:1.9rem;font-weight:700;margin-bottom:20px;">Your System Picked the Worst Possible Time to Stop Working</h2>
-    <p style="color:#374151;line-height:1.8;margin-bottom:16px;">It always happens at the peak. AC goes out in the middle of Alabama's 95°F+ summer humidity. Furnace fails on the coldest night of January. You find out at 9pm, or on a weekend, or both.</p>
-    <p style="color:#374151;line-height:1.8;margin-bottom:16px;">Most Huntsville homeowners in that moment are facing the same dread: a system that's down, temperatures moving in the wrong direction, and no idea if the repair is going to be $300 or a full replacement conversation they're not ready for. And somewhere in the back of their mind: is this HVAC company going to tell me I need a new system when really it's just a bad capacitor?</p>
-    <p style="color:#374151;line-height:1.8;margin-bottom:16px;">That distrust exists because it happens. It's happened to homeowners here in Huntsville, and it's why we do things differently.</p>
-    <p style="color:#374151;line-height:1.8;">If your system is down right now — call <a href="tel:+12562159287" style="color:inherit;font-weight:600;">(256) 215-9287</a>. The rest of this page is for people who have a little more time.</p>
-  </div>
-</section>
-
-<!-- AGITATE SECTION -->
-<section style="padding:60px 0;background:#f8fafc;">
-  <div class="container" style="max-width:860px;margin:0 auto;padding:0 20px;">
-    <h2 style="font-size:1.9rem;font-weight:700;margin-bottom:24px;">What Every Hour Without Heat or AC Actually Costs</h2>
-    <p style="color:#374151;line-height:1.8;margin-bottom:24px;">When your HVAC system is down during cooling season in Huntsville, time is not on your side:</p>
-    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:18px;">
-      <li style="background:white;border-radius:10px;padding:20px 24px;border-left:4px solid #e53e3e;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-        <strong style="display:block;margin-bottom:6px;">Temperature risk</strong>
-        <span style="color:#374151;line-height:1.7;">In Alabama's 95°F+ conditions, interior temperatures in an unconditioned Huntsville home can shift 5–10°F per hour. For households with elderly family members, infants, or pets, this becomes a health issue — not just a comfort issue — within hours.</span>
-      </li>
-      <li style="background:white;border-radius:10px;padding:20px 24px;border-left:4px solid #d97706;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-        <strong style="display:block;margin-bottom:6px;">Secondary damage</strong>
-        <span style="color:#374151;line-height:1.7;">High indoor humidity from a failed AC in summer can drive mold growth in already-humid spaces. A broken HVAC creates cascading problems if left unaddressed.</span>
-      </li>
-      <li style="background:white;border-radius:10px;padding:20px 24px;border-left:4px solid #d97706;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-        <strong style="display:block;margin-bottom:6px;">The "I'll wait and see" trap</strong>
-        <span style="color:#374151;line-height:1.7;">Minor HVAC repairs — a bad capacitor, a failing contactor, low refrigerant — are $150–$500 jobs. Left running, they stress the compressor. A $300 repair becomes a $2,500 repair or full replacement if you give it another season.</span>
-      </li>
-      <li style="background:white;border-radius:10px;padding:20px 24px;border-left:4px solid #2b6cb0;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-        <strong style="display:block;margin-bottom:6px;">Emergency service rates</strong>
-        <span style="color:#374151;line-height:1.7;">Waiting to call until it's a genuine emergency means paying emergency rates — higher trip fees, priority scheduling premiums. Calling when the system is starting to show problems saves money and avoids the worst timing.</span>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<!-- ===== SERVICES ===== -->
-<section id="services">
+<!-- ===== 2. TRUST BAR ===== -->
+<section class="trust-bar reveal">
   <div class="container">
-    <div class="section__header section__header--center">
-      <span class="section-label">What We Do</span>
-      <h2 class="section-title">Complete HVAC Services for Huntsville Homes</h2>
-      <p class="section-subtitle">From emergency repairs to full system replacements, we handle every heating and cooling need — fast, right, and at a fair price.</p>
-    </div>
-
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-card__icon">
-          <img src="/images/icons/thermometer.svg" alt="" width="48" height="48">
+    <div class="trust-bar__inner">
+      <div class="trust-bar__item">
+        <div class="trust-bar__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <h3>AC Repair</h3>
-        <p>AC not blowing cold? Our certified technicians diagnose and fix all AC issues — compressor failures, refrigerant leaks, frozen coils, and more. Same-day service available.</p>
-        <a href="services/ac-repair.html" class="service-card__link">
-          Learn More <img src="/images/icons/arrow-right.svg" alt="" width="48" height="48">
-        </a>
+        Licensed &amp; Bonded
       </div>
-
-      <div class="service-card">
-        <div class="service-card__icon">
-          <img src="/images/icons/settings.svg" alt="" width="48" height="48">
+      <div class="trust-bar__item">
+        <div class="trust-bar__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
-        <h3>AC Installation</h3>
-        <p>New construction or replacing an old system? We size, supply, and install Carrier, Trane, Lennox, and Goodman systems built for Alabama's demanding climate.</p>
-        <a href="services/ac-installation.html" class="service-card__link">
-          Learn More <img src="/images/icons/arrow-right.svg" alt="" width="48" height="48">
-        </a>
+        24/7 Emergency
       </div>
-
-      <div class="service-card">
-        <div class="service-card__icon">
-          <img src="/images/icons/flame.svg" alt="" width="48" height="48">
+      <div class="trust-bar__item">
+        <div class="trust-bar__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
         </div>
-        <h3>Heating Services</h3>
-        <p>Gas furnaces, heat pumps, and electric heating systems — we install, repair, and maintain all heating equipment so your family stays warm through North Alabama winters.</p>
-        <a href="services/heating.html" class="service-card__link">
-          Learn More <img src="/images/icons/arrow-right.svg" alt="" width="48" height="48">
-        </a>
+        Free Estimates
       </div>
-
-      <div class="service-card">
-        <div class="service-card__icon">
-          <img src="/images/icons/calendar.svg" alt="" width="48" height="48">
+      <div class="trust-bar__item">
+        <div class="trust-bar__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         </div>
-        <h3>Maintenance Plans</h3>
-        <p>Prevent costly breakdowns with our seasonal tune-up programs. Two visits per year keep your system running at peak efficiency and extend equipment life by years.</p>
-        <a href="services/maintenance.html" class="service-card__link">
-          Learn More <img src="/images/icons/arrow-right.svg" alt="" width="48" height="48">
-        </a>
+        200+ Five-Star Reviews
       </div>
-
-      <div class="service-card">
-        <div class="service-card__icon">
-          <img src="/images/icons/zap.svg" alt="" width="48" height="48">
+      <div class="trust-bar__item">
+        <div class="trust-bar__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
         </div>
-        <h3>Emergency Service</h3>
-        <p>AC failure at midnight in August? We're there. Our 24/7 emergency line means a real technician — not a voicemail — is dispatched to your Huntsville home within hours.</p>
-        <a href="services/emergency.html" class="service-card__link">
-          Learn More <img src="/images/icons/arrow-right.svg" alt="" width="48" height="48">
-        </a>
-      </div>
-
-      <div class="service-card">
-        <div class="service-card__icon">
-          <img src="/images/icons/wind.svg" alt="" width="48" height="48">
-        </div>
-        <h3>Indoor Air Quality</h3>
-        <p>Huntsville's pollen and humidity can make indoor air worse than outside. We install UV air purifiers, dehumidifiers, and high-efficiency filters to protect your family's health.</p>
-        <a href="services/maintenance.html" class="service-card__link">
-          Learn More <img src="/images/icons/arrow-right.svg" alt="" width="48" height="48">
-        </a>
+        Financing Available
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== WHY CHOOSE US ===== -->
-<section class="section--gray">
+<!-- ===== 3. SERVICES BENTO GRID ===== -->
+<section class="services" id="services">
   <div class="container">
-    <div class="why-grid">
-      <div class="why__image-col">
-        <img
-          src="/images/about-team.webp"
-          alt="Huntsville HVAC Pros team of licensed technicians"
-          class="why__image"
-          width="540" height="480"
-          loading="lazy"
-        >
-        <div class="why__experience-badge">
-          <div class="number">15+</div>
-          <div class="label">Years of<br>Excellence</div>
+    <div class="services__header reveal">
+      <span class="section-label">Our Services</span>
+      <h2 class="section-title">Complete HVAC Solutions for Your Home</h2>
+      <p class="section-subtitle">Expert heating and cooling services tailored to Huntsville's demanding climate.</p>
+    </div>
+    <div class="bento">
+      <!-- Large card: AC Repair & Installation -->
+      <a href="/services/ac-repair.html" class="bento__card bento__card--large reveal">
+        <img src="/images/service-ac-unit.webp" alt="AC repair and installation service in Huntsville Alabama" loading="lazy" width="800" height="500">
+        <div class="bento__content">
+          <span class="bento__tag">Most Popular</span>
+          <h3 class="bento__title">AC Repair &amp; Installation</h3>
+          <p class="bento__desc">Fast diagnostics, honest repairs, and professional installations for all major brands.</p>
+          <span class="bento__link">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span>
         </div>
+      </a>
+      <!-- Small card: Heating Systems -->
+      <a href="/services/heating.html" class="bento__card reveal reveal-delay-1">
+        <img src="/images/service-furnace.webp" alt="Heating system repair and installation in Huntsville" loading="lazy" width="400" height="350">
+        <div class="bento__content">
+          <span class="bento__tag">Essential</span>
+          <h3 class="bento__title">Heating Systems</h3>
+          <span class="bento__link">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span>
+        </div>
+      </a>
+      <!-- Small card: Preventive Maintenance -->
+      <a href="/services/maintenance.html" class="bento__card reveal reveal-delay-2">
+        <img src="/images/service-thermostat.webp" alt="HVAC preventive maintenance service in Huntsville" loading="lazy" width="400" height="350">
+        <div class="bento__content">
+          <span class="bento__tag">Save Money</span>
+          <h3 class="bento__title">Preventive Maintenance</h3>
+          <span class="bento__link">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span>
+        </div>
+      </a>
+      <!-- Small card: Emergency HVAC -->
+      <a href="/services/emergency.html" class="bento__card reveal reveal-delay-3">
+        <img src="/images/service-ac-unit.webp" alt="24/7 emergency HVAC service in Huntsville Alabama" loading="lazy" width="400" height="350">
+        <div class="bento__content">
+          <span class="bento__tag">24/7</span>
+          <h3 class="bento__title">Emergency HVAC</h3>
+          <span class="bento__link">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span>
+        </div>
+      </a>
+      <!-- Large card: AC Installation -->
+      <a href="/services/ac-installation.html" class="bento__card bento__card--large reveal reveal-delay-4">
+        <img src="/images/service-ductwork.webp" alt="Professional AC installation and ductwork in Huntsville" loading="lazy" width="800" height="500">
+        <div class="bento__content">
+          <span class="bento__tag">Upgrade</span>
+          <h3 class="bento__title">AC Installation</h3>
+          <p class="bento__desc">New system installations sized perfectly for your home, with financing options available.</p>
+          <span class="bento__link">Learn More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. WHY CHOOSE US ===== -->
+<section class="why">
+  <div class="container">
+    <div class="why__grid">
+      <div class="why__copy reveal">
+        <span class="section-label">Why Choose Us</span>
+        <h2 class="section-title">The Huntsville HVAC Team That Goes Further</h2>
+        <p class="why__text">We believe in transparent pricing, honest recommendations, and doing the job right the first time. With over 15 years serving Huntsville and Madison County, we've built our reputation on trust — not upsells.</p>
+        <ul class="why__features">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Upfront pricing — no hidden fees
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Same-day service available
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            100% satisfaction guarantee
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            All major brands serviced
+          </li>
+        </ul>
       </div>
-      <div class="why__content-col">
-        <span class="section-label">Why Huntsville Trusts Us</span>
-        <h2 class="section-title">Not Just Another HVAC Company</h2>
-        <p class="section-subtitle" style="margin-bottom:12px;">
-          We know Huntsville's climate inside and out. Summers average 91°F with oppressive humidity that pushes AC systems to the limit. When yours fails, you need someone local, fast, and qualified.
-        </p>
-        <p style="color:var(--text-light);font-size:0.97rem;margin-bottom:32px;">
-          Our technicians are Alabama-licensed HVAC contractors — certified by the Alabama Licensing Board for General Contractors — so you're protected by the standards that matter.
-        </p>
-        <div class="why__features">
-          <div class="why__feature">
-            <div class="why__feature-icon">
-              <img src="/images/icons/shield-check.svg" alt="" width="48" height="48">
-            </div>
-            <div class="why__feature-text">
-              <h4>Licensed &amp; Insured in Alabama</h4>
-              <p>Full HVAC contractor licensing through the Alabama Licensing Board. We carry comprehensive liability and workers' compensation insurance on every job.</p>
-            </div>
-          </div>
-          <div class="why__feature">
-            <div class="why__feature-icon">
-              <img src="/images/icons/clock.svg" alt="" width="48" height="48">
-            </div>
-            <div class="why__feature-text">
-              <h4>Same-Day &amp; Emergency Service</h4>
-              <p>We dispatch technicians the same day for most calls — and 24/7 for emergencies. No waiting three days in an Alabama heat wave.</p>
-            </div>
-          </div>
-          <div class="why__feature">
-            <div class="why__feature-icon">
-              <img src="/images/icons/award.svg" alt="" width="48" height="48">
-            </div>
-            <div class="why__feature-text">
-              <h4>Upfront Pricing, No Surprises</h4>
-              <p>We quote before we start. What we say it costs is what you pay. Financing options available for larger system replacements.</p>
-            </div>
-          </div>
-          <div class="why__feature">
-            <div class="why__feature-icon">
-              <img src="/images/icons/users.svg" alt="" width="48" height="48">
-            </div>
-            <div class="why__feature-text">
-              <h4>Local, Not a Call Center</h4>
-              <p>When you call (256) 215-9287, a Huntsville team member answers — not a national dispatch center. We know your neighborhood because we live here too.</p>
-            </div>
-          </div>
+      <div class="why__visual reveal reveal-delay-2">
+        <img src="/images/about-team.webp" alt="Huntsville HVAC Pros team of licensed technicians" class="why__image" loading="lazy" width="560" height="520">
+        <div class="why__float why__float--1">
+          <div class="why__float-num">15+</div>
+          <div class="why__float-label">Years Experience</div>
+        </div>
+        <div class="why__float why__float--2">
+          <div class="why__float-num">3,200+</div>
+          <div class="why__float-label">Jobs Completed</div>
+        </div>
+        <div class="why__float why__float--3">
+          <div class="why__float-num">24/7</div>
+          <div class="why__float-label">Emergency Service</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== BEFORE/AFTER ===== -->
-<section>
+<!-- ===== 5. HOW IT WORKS ===== -->
+<section class="process">
   <div class="container">
-    <div class="section__header section__header--center">
+    <div class="process__header reveal">
+      <span class="section-label section-label--light">How It Works</span>
+      <h2 class="section-title">From Call to Comfort in 4 Simple Steps</h2>
+      <p class="section-subtitle">Getting your HVAC fixed shouldn't be complicated. Here's our straightforward process.</p>
+    </div>
+    <div class="process__grid">
+      <div class="process__card reveal">
+        <div class="process__num">01</div>
+        <div class="process__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <h3 class="process__card-title">Call or Book Online</h3>
+        <p class="process__card-desc">Call (256) 215-9287 or fill out our online form. We'll schedule your appointment right away.</p>
+      </div>
+      <div class="process__card reveal reveal-delay-1">
+        <div class="process__num">02</div>
+        <div class="process__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
+        <h3 class="process__card-title">Free Diagnostic</h3>
+        <p class="process__card-desc">Our technician arrives on time, inspects your system, and provides a written diagnosis at no charge.</p>
+      </div>
+      <div class="process__card reveal reveal-delay-2">
+        <div class="process__num">03</div>
+        <div class="process__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3 class="process__card-title">Expert Repair</h3>
+        <p class="process__card-desc">With your approval, we fix the problem using quality parts. Most repairs are completed same-visit.</p>
+      </div>
+      <div class="process__card reveal reveal-delay-3">
+        <div class="process__num">04</div>
+        <div class="process__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h3 class="process__card-title">Comfort Guaranteed</h3>
+        <p class="process__card-desc">We test everything before we leave and back our work with a satisfaction guarantee.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 6. BEFORE/AFTER GALLERY ===== -->
+<section class="gallery">
+  <div class="container">
+    <div class="gallery__header reveal">
       <span class="section-label">Our Work</span>
-      <h2 class="section-title">Before &amp; After: Real Huntsville Jobs</h2>
-      <p class="section-subtitle">These are actual system replacements and repairs completed for homeowners across Huntsville and Madison County.</p>
+      <h2 class="section-title">Before &amp; After</h2>
+      <p class="section-subtitle">See the difference professional HVAC service makes for Huntsville homeowners.</p>
     </div>
-
-    <div class="before-after-grid">
-      <div class="ba-pair">
-        <div class="ba-pair__images">
-          <div class="ba-img" data-label="Before" role="img" aria-label="Worn-out Goodman AC unit before replacement">
-            <img
-              src="/images/service-ac-unit.webp"
-              alt="Old failing AC unit before replacement in Huntsville Alabama"
-              width="200" height="180"
-              loading="lazy"
-            >
-          </div>
-          <div class="ba-img" data-label="After" role="img" aria-label="New Carrier AC unit after installation">
-            <img
-              src="/images/service-thermostat.webp"
-              alt="New Carrier AC unit installed in Huntsville Alabama home"
-              width="200" height="180"
-              loading="lazy"
-            >
-          </div>
+    <div class="gallery__grid" style="grid-template-columns: 1fr 1fr;">
+      <div class="gallery__item reveal">
+        <img src="/images/ba-before-ac.jpg" alt="Old failing HVAC condenser unit before replacement in Huntsville Alabama" loading="lazy" width="800" height="533">
+        <div class="gallery__overlay" style="opacity:1;">
+          <span class="gallery__overlay-label">Before</span>
+          <span class="gallery__overlay-title">Aging Condenser Unit</span>
         </div>
-        <div class="ba-pair__caption">Carrier System Replacement — Madison</div>
       </div>
-
-      <div class="ba-pair">
-        <div class="ba-pair__images">
-          <div class="ba-img" data-label="Before" role="img" aria-label="Dirty clogged AC coils before cleaning">
-            <img
-              src="/images/service-ductwork.webp"
-              alt="Clogged AC coils before professional cleaning in Huntsville"
-              width="200" height="180"
-              loading="lazy"
-            >
-          </div>
-          <div class="ba-img" data-label="After" role="img" aria-label="Clean AC coils after professional service">
-            <img
-              src="/images/hero-maintenance.webp"
-              alt="Clean AC unit after professional maintenance service"
-              width="200" height="180"
-              loading="lazy"
-            >
-          </div>
+      <div class="gallery__item reveal reveal-delay-1">
+        <img src="/images/ba-after-ac.jpg" alt="New high-efficiency AC condenser unit installed by Huntsville HVAC Pros" loading="lazy" width="800" height="533">
+        <div class="gallery__overlay" style="opacity:1;">
+          <span class="gallery__overlay-label">After</span>
+          <span class="gallery__overlay-title">New High-Efficiency System</span>
         </div>
-        <div class="ba-pair__caption">Full AC Tune-Up — Hampton Cove</div>
-      </div>
-
-      <div class="ba-pair">
-        <div class="ba-pair__images">
-          <div class="ba-img" data-label="Before" role="img" aria-label="Old furnace before replacement">
-            <img
-              src="/images/service-furnace.webp"
-              alt="Old furnace before replacement in Huntsville Alabama"
-              width="200" height="180"
-              loading="lazy"
-            >
-          </div>
-          <div class="ba-img" data-label="After" role="img" aria-label="New Trane heat pump system after installation">
-            <img
-              src="/images/hero-heating.webp"
-              alt="New Trane heat pump installed in Huntsville Alabama"
-              width="200" height="180"
-              loading="lazy"
-            >
-          </div>
-        </div>
-        <div class="ba-pair__caption">Trane Heat Pump Install — Harvest</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== TESTIMONIALS ===== -->
-<section class="section--gray">
+<!-- ===== 7. TESTIMONIALS ===== -->
+<section class="testimonials">
   <div class="container">
-    <div class="section__header section__header--center">
-      <span class="section-label">Real Reviews</span>
-      <h2 class="section-title">What Huntsville Homeowners Are Saying</h2>
+    <div class="testimonials__header reveal">
+      <span class="section-label section-label--light">Testimonials</span>
+      <h2 class="section-title">What Huntsville Homeowners Say</h2>
     </div>
-
-    <div class="testimonials-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));">
-      <div class="testimonial-card">
-        <p>"AC went out on a Saturday afternoon — one of the hottest weekends of the summer. Called at 3pm, tech was at my house by 6pm. Capacitor had burned out. He showed it to me, showed me the new one, had it running in 45 minutes. Charged me exactly what he quoted on arrival. That's all I wanted."</p>
+    <div class="testimonials__stars reveal">
+      <div class="testimonials__stars-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <div class="testimonials__stars-text">4.9 out of 5 based on 200+ reviews</div>
+    </div>
+    <div class="testimonials__grid">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-card__text">"Our AC died on the hottest day of July. Called Huntsville HVAC Pros and they had a technician at our house within 3 hours. Diagnosed the problem, showed us the failed part, and had it running by dinner. Fair price, no upsell. Exactly what you want in an emergency."</p>
         <div class="testimonial-card__author">
-          <div class="testimonial-card__avatar">BA</div>
+          <div class="testimonial-card__avatar" style="width:44px;height:44px;border-radius:50%;background:rgba(14,165,233,0.15);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:0.875rem;color:var(--color-accent);border:2px solid rgba(14,165,233,0.3);">JR</div>
           <div>
-            <div class="testimonial-card__name">Brian A.</div>
-            <div class="testimonial-card__location">Jones Valley, Huntsville AL</div>
+            <div class="testimonial-card__name">James R.</div>
+            <div class="testimonial-card__role">Homeowner, Madison</div>
           </div>
         </div>
       </div>
-
-      <div class="testimonial-card">
-        <p>"Two other companies told me I needed a full new system. This tech actually diagnosed the problem — a failing contactor and low refrigerant — fixed both, and my 12-year-old unit has run perfectly for two summers since. The honest repair saved me $6,000."</p>
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-card__text">"Best HVAC company I've ever worked with. They were upfront about pricing, explained every step of the repair, and didn't try to sell me a new system when mine just needed a new capacitor. Honest, professional, and fast. I recommend them to everyone."</p>
         <div class="testimonial-card__author">
-          <div class="testimonial-card__avatar">CM</div>
+          <div class="testimonial-card__avatar" style="width:44px;height:44px;border-radius:50%;background:rgba(14,165,233,0.15);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:0.875rem;color:var(--color-accent);border:2px solid rgba(14,165,233,0.3);">SM</div>
           <div>
-            <div class="testimonial-card__name">Carla M.</div>
-            <div class="testimonial-card__location">Hampton Cove, AL</div>
+            <div class="testimonial-card__name">Sarah M.</div>
+            <div class="testimonial-card__role">Homeowner, Huntsville</div>
           </div>
         </div>
       </div>
-
-      <div class="testimonial-card">
-        <p>"Called for a furnace tune-up before winter and mentioned the system had been short-cycling. Tech found a cracked heat exchanger — a real safety issue I didn't know about. He showed me the crack, explained why it mattered, and gave me written quotes for both repair and full replacement. Made that call with full information. That's rare."</p>
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-card__text">"We use them for our office building's HVAC maintenance and emergency repairs. They handle our commercial system like pros, always respond quickly, and their preventive maintenance program has saved us thousands in avoided breakdowns. Top-notch service."</p>
         <div class="testimonial-card__author">
-          <div class="testimonial-card__avatar">DK</div>
+          <div class="testimonial-card__avatar" style="width:44px;height:44px;border-radius:50%;background:rgba(14,165,233,0.15);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:0.875rem;color:var(--color-accent);border:2px solid rgba(14,165,233,0.3);">DT</div>
           <div>
-            <div class="testimonial-card__name">Dave &amp; June K.</div>
-            <div class="testimonial-card__location">Madison, AL</div>
+            <div class="testimonial-card__name">David T.</div>
+            <div class="testimonial-card__role">Property Manager, Decatur</div>
           </div>
         </div>
       </div>
@@ -585,453 +464,325 @@
   </div>
 </section>
 
-<!-- PRICING TRANSPARENCY -->
-<section style="padding:60px 0;background:#fff;">
-  <div class="container" style="max-width:860px;margin:0 auto;padding:0 20px;">
-    <h2 style="font-size:1.9rem;font-weight:700;margin-bottom:8px;">What Does HVAC Service Cost in Huntsville?</h2>
-    <p style="color:#64748b;margin-bottom:32px;">HVAC companies that hide pricing tend to charge more. Here's what real Huntsville-area service costs look like:</p>
-    <div style="display:grid;gap:20px;">
-      <div style="background:#f8fafc;border-radius:10px;padding:20px 24px;">
-        <strong style="display:block;margin-bottom:8px;font-size:1.05rem;">Diagnostic service call</strong>
-        <p style="color:#374151;margin:0;">Service call + full system diagnostic: <strong>$75–$150</strong>. This fee applies toward the repair cost if you proceed with us.</p>
-      </div>
-      <div style="background:#f8fafc;border-radius:10px;padding:20px 24px;">
-        <strong style="display:block;margin-bottom:8px;font-size:1.05rem;">Common repairs</strong>
-        <ul style="color:#374151;margin:0;padding-left:20px;line-height:2;">
-          <li>Capacitor replacement: <strong>$150–$300</strong> (most common AC failure)</li>
-          <li>Contactor replacement: <strong>$150–$350</strong></li>
-          <li>Fan motor replacement: <strong>$250–$500</strong></li>
-          <li>Refrigerant recharge (R-410A): <strong>$200–$600</strong> depending on system size</li>
-          <li>Thermostat replacement: <strong>$150–$350</strong> installed</li>
-          <li>Blower motor: <strong>$350–$600</strong></li>
-        </ul>
-      </div>
-      <div style="background:#f8fafc;border-radius:10px;padding:20px 24px;">
-        <strong style="display:block;margin-bottom:8px;font-size:1.05rem;">System replacement</strong>
-        <ul style="color:#374151;margin:0;padding-left:20px;line-height:2;">
-          <li>AC unit only (installed): <strong>$3,500–$7,500</strong> depending on tonnage and efficiency</li>
-          <li>Full HVAC system (AC + furnace, installed): <strong>$7,000–$15,000</strong></li>
-        </ul>
-        <p style="color:#64748b;margin:10px 0 0;font-size:0.92rem;">What drives the variance: system size, SEER rating, ductwork condition, and whether the air handler also needs replacement.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section style="padding:60px 0;background:#f8fafc;">
-  <div class="container" style="max-width:860px;margin:0 auto;padding:0 20px;">
-    <h2 style="font-size:1.9rem;font-weight:700;margin-bottom:32px;">Questions Huntsville Homeowners Ask Before Calling HVAC Service</h2>
-    <div style="display:flex;flex-direction:column;gap:20px;">
-      <div style="background:white;border-radius:10px;padding:24px;border:1px solid #e2e8f0;">
-        <h3 style="font-size:1.05rem;font-weight:700;margin:0 0 10px;">How do I know if I need a repair or a full replacement?</h3>
-        <p style="color:#374151;margin:0;line-height:1.7;">General rule: if the repair costs more than 50% of a new system's price and the system is 12+ years old, replacement usually pencils out better long-term. If it's a younger system or a common component failure, repair almost always makes more sense. We give you both numbers honestly and let you decide.</p>
-      </div>
-      <div style="background:white;border-radius:10px;padding:24px;border:1px solid #e2e8f0;">
-        <h3 style="font-size:1.05rem;font-weight:700;margin:0 0 10px;">My system is running — it's just not cooling well. Is that worth a service call?</h3>
-        <p style="color:#374151;margin:0;line-height:1.7;">Yes. Underperformance before full failure is almost always cheaper to fix than waiting for the shutdown. Common causes: dirty coils, low refrigerant, duct leaks, a failing capacitor. These are all catchable before they become emergencies.</p>
-      </div>
-      <div style="background:white;border-radius:10px;padding:24px;border:1px solid #e2e8f0;">
-        <h3 style="font-size:1.05rem;font-weight:700;margin:0 0 10px;">How do I avoid getting told I need a new system when I don't?</h3>
-        <p style="color:#374151;margin:0;line-height:1.7;">Ask for the diagnostic findings in writing. Ask the tech to show you the failed component. A tech who can't show you the problem or explain it clearly is a red flag. We always show homeowners exactly what failed and why.</p>
-      </div>
-      <div style="background:white;border-radius:10px;padding:24px;border:1px solid #e2e8f0;">
-        <h3 style="font-size:1.05rem;font-weight:700;margin:0 0 10px;">Do you offer tune-ups, or just repairs?</h3>
-        <p style="color:#374151;margin:0;line-height:1.7;">Both. Annual tune-ups for AC (typically in spring) and furnace (typically in fall) are the single best way to catch small problems before they become emergencies. Cost: $80–$150 per unit. Most homeowners who skip tune-ups regret it exactly once.</p>
-      </div>
-      <div style="background:white;border-radius:10px;padding:24px;border:1px solid #e2e8f0;">
-        <h3 style="font-size:1.05rem;font-weight:700;margin:0 0 10px;">What's your response time on emergency calls?</h3>
-        <p style="color:#374151;margin:0;line-height:1.7;">Within 2–4 hours for same-day calls in Huntsville and immediate surrounding areas. We don't make promises we can't keep, and we give honest time windows — not vague ranges.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- LOCAL SPECIFICITY -->
-<section style="padding:60px 0;background:#fff;">
-  <div class="container" style="max-width:860px;margin:0 auto;padding:0 20px;">
-    <h2 style="font-size:1.9rem;font-weight:700;margin-bottom:24px;">Why Alabama's 95°F+ Summer Humidity Demands a Different Standard</h2>
-    <p style="color:#374151;line-height:1.8;margin-bottom:24px;">HVAC systems in Huntsville work harder than systems in more temperate markets:</p>
-    <div style="display:flex;flex-direction:column;gap:16px;">
-      <div style="border-left:4px solid #2b6cb0;padding-left:20px;">
-        <strong style="display:block;margin-bottom:6px;">Cooling season strain</strong>
-        <p style="color:#374151;margin:0;line-height:1.7;">Alabama's 95°F+ humidity conditions push compressors and heat exchangers to the limits of their design specifications. Capacitors fail more often. Systems that would last 18 years in a mild climate need more proactive maintenance here to hit even 12–15 years.</p>
-      </div>
-      <div style="border-left:4px solid #2b6cb0;padding-left:20px;">
-        <strong style="display:block;margin-bottom:6px;">Filter and coil fouling</strong>
-        <p style="color:#374151;margin:0;line-height:1.7;">Huntsville's humidity causes evaporator coils and air filters to foul faster than national averages. A dirty coil reduces efficiency and causes the compressor to work harder — accelerating wear in exactly the conditions Huntsville puts on systems hardest.</p>
-      </div>
-      <div style="border-left:4px solid #2b6cb0;padding-left:20px;">
-        <strong style="display:block;margin-bottom:6px;">Refrigerant management</strong>
-        <p style="color:#374151;margin:0;line-height:1.7;">High ambient temperatures require properly charged systems. A unit that's slightly low on refrigerant in a moderate climate struggles to cool adequately in Huntsville. This is one of the most common causes of "AC is running but not cooling well" calls we get.</p>
-      </div>
-    </div>
-    <p style="color:#64748b;margin-top:24px;line-height:1.7;">We've serviced systems across Huntsville, Madison, Decatur, Athens, and surrounding North Alabama communities. The Huntsville-specific failure patterns we see every season aren't surprises to us — they're what we tune up and repair for.</p>
-  </div>
-</section>
-
-<!-- ===== HOW IT WORKS ===== -->
-<section>
+<!-- ===== 8. SERVICE AREAS ===== -->
+<section class="areas">
   <div class="container">
-    <div class="section__header section__header--center">
-      <span class="section-label">Simple Process</span>
-      <h2 class="section-title">Getting Your HVAC Fixed Is Easy</h2>
-      <p class="section-subtitle">From first call to working system — here's how we handle every job.</p>
-    </div>
-    <div class="process-steps">
-      <div class="process-step">
-        <div class="process-step__number">1</div>
-        <h4>You Call — We Answer</h4>
-        <p>Call (256) 215-9287. If we're on another job, we call back within 30 minutes. We'll ask what the system is doing, the make and model, and when the problem started. We often know what's wrong before we arrive.</p>
+    <div class="areas__grid">
+      <div class="areas__map reveal">
+        <div class="areas__map-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <p class="areas__map-text">Serving Huntsville &amp; all of Madison County</p>
       </div>
-      <div class="process-step">
-        <div class="process-step__number">2</div>
-        <h4>Same-Day Dispatch</h4>
-        <p>We schedule the service call for the same day when possible — typically within 2–4 hours. We give you a realistic time window, not a 6-hour "sometime today" estimate.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-step__number">3</div>
-        <h4>Full System Diagnostic</h4>
-        <p>The service call fee covers a full system diagnostic — not just the symptom, but all the related components that typically fail together. You'll know the full picture before we discuss options.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-step__number">4</div>
-        <h4>Written Quote — Your Decision</h4>
-        <p>We show you what's wrong, explain it plainly, and give you the repair cost in writing. If a repair is borderline — old system, expensive fix — we give you the replacement comparison too. No pressure. You decide.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-step__number">5</div>
-        <h4>Repair Done Right</h4>
-        <p>Parts come from our fully stocked service van for the most common failures. Most repairs complete same visit. If parts need to be ordered, we tell you the timeline before you authorize anything.</p>
+      <div class="areas__cities reveal reveal-delay-1">
+        <span class="section-label">Service Areas</span>
+        <h3>Cities We Serve</h3>
+        <p class="areas__cities-subtitle">Fast response times across Huntsville and the greater North Alabama region.</p>
+        <div class="areas__city-grid">
+          <a href="#" class="areas__city">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            Huntsville
+          </a>
+          <a href="/locations/madison.html" class="areas__city">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            Madison
+          </a>
+          <a href="/locations/hampton-cove.html" class="areas__city">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            Hampton Cove
+          </a>
+          <a href="/locations/jones-valley.html" class="areas__city">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            Jones Valley
+          </a>
+          <a href="/locations/meridianville.html" class="areas__city">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            Meridianville
+          </a>
+          <a href="/locations/harvest.html" class="areas__city">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            Harvest
+          </a>
+          <a href="/locations/athens.html" class="areas__city">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            Athens
+          </a>
+          <a href="/locations/decatur.html" class="areas__city">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            Decatur
+          </a>
+          <a href="/locations/hartselle.html" class="areas__city">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            Hartselle
+          </a>
+          <a href="/locations/scottsboro.html" class="areas__city">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            Scottsboro
+          </a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== EMERGENCY BANNER ===== -->
-<div class="emergency-banner">
-  <div class="emergency-banner__inner">
-    <div class="emergency-banner__text">
-      <h2>AC Out? Don't Sweat It.</h2>
-      <p>True 24/7 emergency HVAC service — real technicians, not voicemail. Available every night, every weekend, every holiday.</p>
-    </div>
-    <div class="emergency-banner__badge">
-      <img src="/images/icons/zap.svg" alt="" width="48" height="48">
-      <div class="emergency-banner__badge-text">
-        <div class="label">Emergency Line</div>
-        <a href="tel:+12562159287" class="number">(256) 215-9287</a>
-      </div>
-    </div>
-    <a href="tel:+12562159287" class="btn btn-outline-white">Call Now — We Answer</a>
-  </div>
-</div>
-
-<!-- ===== LOCATIONS ===== -->
-<section class="section--gray">
+<!-- ===== 9. FAQ ACCORDION ===== -->
+<section class="faq" id="faq">
   <div class="container">
-    <div class="section__header section__header--center">
-      <span class="section-label">Service Area</span>
-      <h2 class="section-title">Proudly Serving All of Huntsville &amp; Beyond</h2>
-      <p class="section-subtitle">Local technicians across Madison County — we're always nearby when you need us most.</p>
+    <div class="faq__header reveal">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Get answers to the most common HVAC questions from Huntsville homeowners.</p>
     </div>
-
-    <div class="locations-grid">
-      <a href="locations/madison.html" class="location-card">
-        <div class="location-card__icon">
-          <img src="/images/icons/map-pin.svg" alt="" width="48" height="48">
+    <div class="faq__list reveal">
+      <div class="faq__item">
+        <button class="faq__question">
+          How much does HVAC repair cost in Huntsville?
+          <span class="faq__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq__answer">
+          <div class="faq__answer-inner">Most HVAC repairs in Huntsville range from $150&ndash;$500 depending on the issue. We provide free diagnostic estimates so you know the cost before any work begins.</div>
         </div>
-        <h3>Madison</h3>
-        <p>Full HVAC service</p>
-      </a>
-      <a href="locations/hampton-cove.html" class="location-card">
-        <div class="location-card__icon">
-          <img src="/images/icons/map-pin.svg" alt="" width="48" height="48">
+      </div>
+      <div class="faq__item">
+        <button class="faq__question">
+          Do you offer 24/7 emergency HVAC service?
+          <span class="faq__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq__answer">
+          <div class="faq__answer-inner">Yes &mdash; we offer round-the-clock emergency HVAC service across Huntsville and Madison County. Call <a href="tel:+12562159287">(256) 215-9287</a> anytime for immediate assistance.</div>
         </div>
-        <h3>Hampton Cove</h3>
-        <p>Full HVAC service</p>
-      </a>
-      <a href="locations/jones-valley.html" class="location-card">
-        <div class="location-card__icon">
-          <img src="/images/icons/map-pin.svg" alt="" width="48" height="48">
+      </div>
+      <div class="faq__item">
+        <button class="faq__question">
+          How often should I replace my HVAC system?
+          <span class="faq__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq__answer">
+          <div class="faq__answer-inner">Most HVAC systems last 15&ndash;20 years with proper maintenance. If your system is over 10 years old and needs frequent repairs, replacement may be more cost-effective.</div>
         </div>
-        <h3>Jones Valley</h3>
-        <p>Full HVAC service</p>
-      </a>
-      <a href="locations/meridianville.html" class="location-card">
-        <div class="location-card__icon">
-          <img src="/images/icons/map-pin.svg" alt="" width="48" height="48">
+      </div>
+      <div class="faq__item">
+        <button class="faq__question">
+          Are your technicians licensed and insured?
+          <span class="faq__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq__answer">
+          <div class="faq__answer-inner">Absolutely. All our technicians are EPA-certified, fully licensed in Alabama, and carry comprehensive liability insurance for your protection.</div>
         </div>
-        <h3>Meridianville</h3>
-        <p>Full HVAC service</p>
-      </a>
-      <a href="locations/harvest.html" class="location-card">
-        <div class="location-card__icon">
-          <img src="/images/icons/map-pin.svg" alt="" width="48" height="48">
+      </div>
+      <div class="faq__item">
+        <button class="faq__question">
+          Do you offer financing for new HVAC installations?
+          <span class="faq__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq__answer">
+          <div class="faq__answer-inner">Yes, we offer flexible financing options with approved credit, including 0% APR plans for qualifying customers. Ask about our current promotions.</div>
         </div>
-        <h3>Harvest</h3>
-        <p>Full HVAC service</p>
-      </a>
+      </div>
+      <div class="faq__item">
+        <button class="faq__question">
+          What brands of HVAC equipment do you install?
+          <span class="faq__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq__answer">
+          <div class="faq__answer-inner">We install and service all major brands including Carrier, Trane, Lennox, Rheem, and Goodman. We'll recommend the best fit for your home and budget.</div>
+        </div>
+      </div>
     </div>
-    <p style="text-align:center;margin-top:24px;font-size:0.92rem;color:var(--text-light);">Also serving: Brownsboro, New Market, Hazel Green, Gurley, and all of Madison County, AL. <a href="contact.html">Not sure if we cover your area? Ask us.</a></p>
   </div>
 </section>
 
-<!-- ===== BRANDS ===== -->
-<section>
+<!-- ===== 10. CTA GRADIENT ===== -->
+<section class="cta-section">
   <div class="container">
-    <div class="section__header section__header--center">
-      <span class="section-label">Trusted Brands</span>
-      <h2 class="section-title">We Install &amp; Service All Major Brands</h2>
+    <div class="cta__urgency reveal">
+      <span class="cta__urgency-dot"></span>
+      Same-Day Estimates Available
     </div>
-    <div class="brands-row">
-      <div class="brand-item"><div class="brand-item__name">Carrier</div></div>
-      <div class="brand-item"><div class="brand-item__name">Trane</div></div>
-      <div class="brand-item"><div class="brand-item__name">Lennox</div></div>
-      <div class="brand-item"><div class="brand-item__name">Goodman</div></div>
-      <div class="brand-item"><div class="brand-item__name">Rheem</div></div>
-      <div class="brand-item"><div class="brand-item__name">Daikin</div></div>
-      <div class="brand-item"><div class="brand-item__name">York</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== BLOG PREVIEW ===== -->
-<section class="section--gray">
-  <div class="container">
-    <div class="section__header section__header--center">
-      <span class="section-label">HVAC Tips &amp; Insights</span>
-      <h2 class="section-title">From the Huntsville HVAC Blog</h2>
-    </div>
-    <div class="blog-grid">
-      <div class="blog-card">
-        <img
-          src="/images/blog-summer-prep.webp"
-          alt="AC maintenance tips for Alabama summer"
-          class="blog-card__img"
-          width="600" height="200"
-          loading="lazy"
-        >
-        <div class="blog-card__body">
-          <div class="blog-card__meta">
-            <span class="blog-card__category">Maintenance</span>
-            <span>June 2025</span>
-          </div>
-          <h3><a href="blog/summer-ac-prep-huntsville.html">5 AC Prep Steps Every Huntsville Homeowner Should Do Before Summer</a></h3>
-          <p>Alabama summers are brutal. With average highs of 91°F and humidity that feels like a sauna, your AC runs harder than systems in most of the country. Here's how to get ready.</p>
-          <a href="blog/summer-ac-prep-huntsville.html" class="blog-card__readmore">Read More <img src="/images/icons/arrow-right.svg" alt="" width="48" height="48"></a>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <img
-          src="/images/blog-signs-repair.webp"
-          alt="Signs your AC needs repair in Huntsville"
-          class="blog-card__img"
-          width="600" height="200"
-          loading="lazy"
-        >
-        <div class="blog-card__body">
-          <div class="blog-card__meta">
-            <span class="blog-card__category">AC Repair</span>
-            <span>May 2025</span>
-          </div>
-          <h3><a href="blog/signs-ac-needs-repair.html">7 Warning Signs Your AC Is About to Fail (Don't Ignore These)</a></h3>
-          <p>Catching AC problems early can mean the difference between a $150 repair and a $4,000 emergency replacement. Watch for these warning signs before summer hits Huntsville.</p>
-          <a href="blog/signs-ac-needs-repair.html" class="blog-card__readmore">Read More <img src="/images/icons/arrow-right.svg" alt="" width="48" height="48"></a>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <img
-          src="/images/blog-hvac-choice.webp"
-          alt="How to choose a new HVAC system in Huntsville Alabama"
-          class="blog-card__img"
-          width="600" height="200"
-          loading="lazy"
-        >
-        <div class="blog-card__body">
-          <div class="blog-card__meta">
-            <span class="blog-card__category">Buying Guide</span>
-            <span>April 2025</span>
-          </div>
-          <h3><a href="blog/choosing-hvac-system-huntsville.html">How to Choose the Right HVAC System for Your Huntsville Home</a></h3>
-          <p>Carrier vs. Trane vs. Goodman — which brand is right for you? Size matters more than brand. Here's what every Huntsville homeowner should know before making this big decision.</p>
-          <a href="blog/choosing-hvac-system-huntsville.html" class="blog-card__readmore">Read More <img src="/images/icons/arrow-right.svg" alt="" width="48" height="48"></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== BEFORE & AFTER GALLERY ===== -->
-<section style="padding:60px 0;background:#f8f9fa;" id="our-work">
-  <div class="container">
-    <div style="text-align:center;margin-bottom:40px;">
-      <span class="section-label">Real Results</span>
-      <h2 style="font-size:2rem;font-weight:700;margin:8px 0 12px;">Before &amp; After</h2>
-      <p style="color:#5a5a5a;max-width:560px;margin:0 auto;">See the difference a professional HVAC installation makes for Huntsville homeowners.</p>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.12);max-width:900px;margin:0 auto;">
-      <div style="position:relative;aspect-ratio:16/9;overflow:hidden;">
-        <span style="position:absolute;top:12px;left:12px;background:rgba(180,30,30,0.88);color:#fff;padding:4px 12px;border-radius:4px;font-size:0.75rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;z-index:2;">Before</span>
-        <img src="/images/ba-before-ac.jpg" alt="Old failing HVAC condenser unit before replacement in Huntsville Alabama" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" width="800" height="533">
-      </div>
-      <div style="position:relative;aspect-ratio:16/9;overflow:hidden;">
-        <span style="position:absolute;top:12px;left:12px;background:rgba(46,92,30,0.88);color:#fff;padding:4px 12px;border-radius:4px;font-size:0.75rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;z-index:2;">After</span>
-        <img src="/images/ba-after-ac.jpg" alt="New high-efficiency AC condenser unit installed by Huntsville HVAC Pros" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy" width="800" height="533">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== CTA BANNER ===== -->
-<div class="cta-banner">
-  <div class="container cta-banner__inner">
-    <span class="section-label">Ready to Get Comfortable?</span>
-    <h2>When Your System Goes Down in Huntsville, Hours Matter</h2>
-    <p>In Alabama's 95°F+ humidity, every hour your system is out means more discomfort and interior temperatures moving in the wrong direction. Our 2–4 hour same-day response is a commitment, not a hope. If you're in emergency mode right now — call. If you're planning ahead — schedule before the AC season rush fills our calendar.</p>
-    <div class="cta-banner__actions">
-      <a href="tel:+12562159287" class="btn btn-primary btn-lg">
-        <img src="/images/icons/phone.svg" alt="" width="48" height="48">
-        Call (256) 215-9287
+    <h2 class="cta__title reveal">Ready for Reliable Heating &amp; Cooling?</h2>
+    <p class="cta__desc reveal">Don't sweat another day. Get a free estimate from Huntsville's most trusted HVAC team.</p>
+    <div class="cta__buttons reveal">
+      <a href="tel:+12562159287" class="btn btn--white">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now
       </a>
-      <a href="contact.html" class="btn btn-outline-white btn-lg">Request Free Estimate</a>
+      <a href="/contact.html" class="btn btn--ghost">Get Free Estimate
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
     </div>
+    <div class="cta__phone reveal"><a href="tel:+12562159287">(256) 215-9287</a></div>
   </div>
-</div>
+</section>
 
-<!-- ===== FOOTER ===== -->
-<footer class="site-footer">
+<!-- ===== 11. FOOTER ===== -->
+<footer class="footer">
   <div class="container">
     <div class="footer__grid">
-      <div class="footer__col">
-        <a href="/" class="footer__brand-logo">
-          <div class="icon">
-            <img src="/images/icons/thermometer.svg" alt="" width="48" height="48">
-          </div>
-          <span class="footer__brand-name">Huntsville HVAC Pros</span>
-        </a>
-        <p>Huntsville's trusted HVAC company — licensed, insured, and local. Serving all of Madison County with honest AC repair, installation, and heating services since 2009.</p>
+      <!-- Column 1: Brand -->
+      <div>
+        <div class="footer__brand-name">Huntsville <span>HVAC</span> Pros</div>
+        <p class="footer__brand-desc">Huntsville's trusted HVAC company &mdash; licensed, insured, and local. Serving all of Madison County with honest AC repair, installation, and heating services.</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#" class="footer__social" aria-label="Google">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.545 10.239v3.821h5.445c-.712 2.315-2.647 3.972-5.445 3.972a6.033 6.033 0 110-12.064c1.498 0 2.866.549 3.921 1.453l2.814-2.814A9.969 9.969 0 0012.545 2C7.021 2 2.543 6.477 2.543 12s4.478 10 10.002 10c8.396 0 10.249-7.85 9.426-11.748l-9.426-.013z"/></svg>
+          </a>
+          <a href="#" class="footer__social" aria-label="Yelp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-2h2v2zm0-4h-2V7h2v6zm4 4h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <!-- Column 2: Services -->
+      <div>
+        <h4 class="footer__heading">Services</h4>
+        <ul class="footer__links">
+          <li><a href="/services/ac-repair.html">AC Repair</a></li>
+          <li><a href="/services/ac-installation.html">AC Installation</a></li>
+          <li><a href="/services/heating.html">Heating</a></li>
+          <li><a href="/services/maintenance.html">Maintenance</a></li>
+          <li><a href="/services/emergency.html">Emergency</a></li>
+        </ul>
+      </div>
+      <!-- Column 3: Company -->
+      <div>
+        <h4 class="footer__heading">Company</h4>
+        <ul class="footer__links">
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/locations/madison.html">Service Areas</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Column 4: Contact -->
+      <div>
+        <h4 class="footer__heading">Contact</h4>
         <div class="footer__contact-item">
-          <img src="/images/icons/phone.svg" alt="" width="48" height="48">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           <a href="tel:+12562159287">(256) 215-9287</a>
         </div>
         <div class="footer__contact-item">
-          <img src="/images/icons/mail.svg" alt="" width="48" height="48">
-          <a href="mailto:info@huntsvillehvacpros.com">info@huntsvillehvacpros.com</a>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>info@huntsvillehvacpros.com</span>
         </div>
         <div class="footer__contact-item">
-          <img src="/images/icons/map-pin.svg" alt="" width="48" height="48">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           <span>Huntsville, AL 35801</span>
-        </div>
-        <div class="footer__contact-item">
-          <img src="/images/icons/clock.svg" alt="" width="48" height="48">
-          <span>Mon–Fri 7am–7pm · Sat 8am–5pm · 24/7 Emergency</span>
-        </div>
-      </div>
-
-      <div class="footer__col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="services/ac-repair.html"><img src="/images/icons/chevron-right.svg" alt="" width="48" height="48">AC Repair</a></li>
-          <li><a href="services/ac-installation.html"><img src="/images/icons/chevron-right.svg" alt="" width="48" height="48">AC Installation</a></li>
-          <li><a href="services/heating.html"><img src="/images/icons/chevron-right.svg" alt="" width="48" height="48">Heating Services</a></li>
-          <li><a href="services/maintenance.html"><img src="/images/icons/chevron-right.svg" alt="" width="48" height="48">Maintenance Plans</a></li>
-          <li><a href="services/emergency.html"><img src="/images/icons/chevron-right.svg" alt="" width="48" height="48">Emergency Service</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__col">
-        <h4>Service Areas</h4>
-        <ul>
-          <li><a href="locations/madison.html"><img src="/images/icons/chevron-right.svg" alt="" width="48" height="48">Madison</a></li>
-          <li><a href="locations/hampton-cove.html"><img src="/images/icons/chevron-right.svg" alt="" width="48" height="48">Hampton Cove</a></li>
-          <li><a href="locations/jones-valley.html"><img src="/images/icons/chevron-right.svg" alt="" width="48" height="48">Jones Valley</a></li>
-          <li><a href="locations/meridianville.html"><img src="/images/icons/chevron-right.svg" alt="" width="48" height="48">Meridianville</a></li>
-          <li><a href="locations/harvest.html"><img src="/images/icons/chevron-right.svg" alt="" width="48" height="48">Harvest</a></li>
-        </ul>
-        <h4 style="margin-top:24px;">Quick Links</h4>
-        <ul>
-          <li><a href="about.html"><img src="/images/icons/chevron-right.svg" alt="" width="48" height="48">About Us</a></li>
-          <li><a href="faq.html"><img src="/images/icons/chevron-right.svg" alt="" width="48" height="48">FAQ</a></li>
-          <li><a href="blog/index.html"><img src="/images/icons/chevron-right.svg" alt="" width="48" height="48">HVAC Blog</a></li>
-          <li><a href="contact.html"><img src="/images/icons/chevron-right.svg" alt="" width="48" height="48">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__col">
-        <h4>Request Service</h4>
-        <p>Need HVAC service in Huntsville? Call now or send us a message — we respond fast.</p>
-        <a href="tel:+12562159287" class="btn btn-primary" style="margin-bottom:12px;display:inline-flex;">
-          <img src="/images/icons/phone.svg" alt="" width="48" height="48">
-          (256) 215-9287
-        </a>
-        <a href="contact.html" class="btn btn-outline-white" style="display:inline-flex;">Request Estimate</a>
-        <div style="margin-top:24px;">
-          <p style="font-size:0.8rem;opacity:0.6;margin-bottom:8px;">LICENSED &amp; INSURED</p>
-          <p style="font-size:0.8rem;opacity:0.6;">Alabama Licensing Board for General Contractors · HVAC Division</p>
         </div>
       </div>
     </div>
-
     <div class="footer__bottom">
-      <span>&copy; 2025 Huntsville HVAC Pros. All rights reserved.</span>
-      <div class="footer__bottom-links">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="sitemap.xml">Sitemap</a>
+      <span class="footer__copy">&copy; 2026 Huntsville HVAC Pros. All rights reserved.</span>
+      <div class="footer__legal">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/sitemap.xml">Sitemap</a>
       </div>
     </div>
   </div>
+</footer>
 
-    </footer>
-
-<!-- ===== MOBILE CTA ===== -->
+<!-- ===== 12. MOBILE CTA BAR ===== -->
 <div class="mobile-cta">
-  <a href="tel:+12562159287" class="mobile-cta__call">
-    <img src="/images/icons/phone.svg" alt="" width="48" height="48">
+  <a href="tel:+12562159287" class="mobile-cta__btn mobile-cta__btn--call">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
     Call Now
   </a>
-  <a href="contact.html" class="mobile-cta__text">
-    <img src="/images/icons/mail.svg" alt="" width="48" height="48">
+  <a href="/contact.html" class="mobile-cta__btn mobile-cta__btn--estimate">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
     Free Estimate
   </a>
+</div>
 
-        <a href="contact.html" class="mobile-cta-quote" style="background:#10b981;color:#fff;flex:1;text-align:center;padding:13px 8px;border-radius:6px;font-weight:600;font-size:.9rem;text-decoration:none;">🗓 Free Quote</a></div>
-
+<!-- ===== JAVASCRIPT ===== -->
 <script>
-  // Mobile nav toggle
-  const navToggle = document.getElementById('navToggle');
-  const navClose = document.getElementById('navClose');
-  const siteNav = document.getElementById('siteNav');
-
-  navToggle.addEventListener('click', () => {
-    siteNav.classList.add('mobile-open');
-    document.body.style.overflow = 'hidden';
-  });
-
-  navClose.addEventListener('click', () => {
-    siteNav.classList.remove('mobile-open');
-    document.body.style.overflow = '';
-  });
-
-  // Close on outside click
-  document.addEventListener('click', (e) => {
-    if (siteNav.classList.contains('mobile-open') &&
-        !siteNav.contains(e.target) && e.target !== navToggle) {
-      siteNav.classList.remove('mobile-open');
-      document.body.style.overflow = '';
+  // Nav scroll effect
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 60) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
     }
   });
 
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+  // Close mobile nav on link click
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+    });
+  });
+
+  // Scroll reveal with IntersectionObserver
+  const revealElements = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  revealElements.forEach(el => revealObserver.observe(el));
+
+  // Animated counters
+  const counterElements = document.querySelectorAll('[data-count]');
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = parseInt(el.getAttribute('data-count'));
+        const suffix = el.textContent.includes('+') ? '+' : '';
+        let current = 0;
+        const increment = Math.ceil(target / 60);
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          el.textContent = current.toLocaleString() + suffix;
+        }, 25);
+        counterObserver.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+  counterElements.forEach(el => counterObserver.observe(el));
+
   // FAQ accordion
-  document.querySelectorAll('.faq-item__question').forEach(btn => {
+  document.querySelectorAll('.faq__question').forEach(btn => {
     btn.addEventListener('click', () => {
-      const item = btn.closest('.faq-item');
-      const isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-      if (!isOpen) item.classList.add('open');
+      const item = btn.closest('.faq__item');
+      const isActive = item.classList.contains('active');
+      // Close all items
+      document.querySelectorAll('.faq__item').forEach(i => i.classList.remove('active'));
+      // Toggle clicked item
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    });
+  });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      const targetEl = document.querySelector(targetId);
+      if (targetEl) {
+        e.preventDefault();
+        targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     });
   });
 </script>
+
 </body>
 </html>
