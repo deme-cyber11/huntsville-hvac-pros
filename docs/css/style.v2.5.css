@@ -1918,3 +1918,36 @@ section[style*="--color-white"] .why__stat-card p { color: var(--color-text-ligh
 @media (max-width: 480px) {
   .why__stats { grid-template-columns: 1fr; }
 }
+
+/* ========== PRICING ROWS ========== */
+.pricing-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: var(--color-surface);
+  border-radius: 8px;
+  border-left: 3px solid var(--color-accent);
+}
+.pricing-row__label {
+  font-weight: 600;
+  color: var(--color-dark);
+  flex: 1;
+  min-width: 0;
+}
+.pricing-row__price {
+  color: var(--color-accent);
+  font-weight: 700;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Two-col grid: add top gap on second column when stacked on mobile */
+@media (max-width: 768px) {
+  .two-col-grid > div + div {
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0,0,0,0.07);
+    margin-top: 0.5rem;
+  }
+}
