@@ -80,23 +80,24 @@
 </head>
 <body>
 
-<!-- ===== NAV ===== -->
-<header class="site-header" id="siteHeader">
-  <div class="container site-header__inner">
-    <a href="/" class="site-logo">Huntsville <span>HVAC</span> Pros</a>
-    <nav class="site-nav" id="siteNav">
-      <a href="/services/ac-repair.html" class="nav-link">Services</a>
-      <a href="/about.html" class="nav-link">About</a>
-      <a href="/blog/" class="nav-link active">Blog</a>
-      <a href="/faq.html" class="nav-link">FAQ</a>
-      <a href="/contact.html" class="nav-link">Contact</a>
-    </nav>
-    <a href="tel:+12562159287" class="btn btn-primary nav-cta">Call Now</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
-      <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<!-- NAV -->
+<nav class="nav" id="mainNav">
+  <div class="nav__inner">
+    <a href="/" class="nav__logo">Huntsville <span>HVAC</span> Pros</a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="/services/ac-repair.html">Services</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/locations/madison.html">Areas</a></li>
+      <li><a href="/faq.html">FAQ</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="tel:+12562159287" class="nav__cta">Call Now</a></li>
+    </ul>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu">
+      <svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
     </button>
   </div>
-</header>
+</nav>
 
 <!-- ===== HERO ===== -->
 <section class="hero hero--inner">
@@ -153,21 +154,18 @@
 </article>
 
 <!-- ===== FOOTER ===== -->
-<footer class="site-footer">
+<footer class="footer">
   <div class="container">
     <div class="footer__grid">
-      <div class="footer__col">
-        <a href="/" class="footer__brand">Huntsville <span>HVAC</span> Pros</a>
-        <p>Licensed, insured HVAC contractors serving Huntsville and Madison County. Honest service since 2009.</p>
-        <div class="footer__social">
-          <a href="#" aria-label="Facebook"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
-          <a href="#" aria-label="Google"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg></a>
-          <a href="#" aria-label="Yelp"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.926-4.308c.564-.832 1.836-.476 1.92.537l.325 3.898c.024.288-.096.564-.336.756l-.664.514zm-8.77 5.028l-1.2-4.896c-.24-.984.936-1.668 1.776-1.032l4.356 3.3c.528.396.384 1.236-.216 1.404l-4.272 1.2c-.168.048-.312.024-.444-.024v.048zm-2.088-6.372L5.262 8.622c-.66-.42-.444-1.404.324-1.5l5.1-.636c.456-.06.852.276.912.744l.576 4.656c.084.684-.768 1.056-1.26.528l-.612-.564v-.6zm-3.456 4.62l4.464-2.472c.888-.492 1.812.492 1.392 1.44l-2.148 4.86c-.276.624-1.14.66-1.356.06l-2.388-3.048c-.18-.228-.168-.528.036-.84zm6.024-10.356l.216 5.1c.036.864-1.044 1.248-1.596.564l-4.02-5.016c-.348-.432-.06-1.068.468-1.14l4.14-.516c.432-.06.768.276.792.708v.3z"/></svg></a>
-        </div>
+      <div class="footer__col footer__col--brand">
+        <div class="footer__brand-name">Huntsville <span>HVAC</span> Pros</div>
+        <p class="footer__brand-desc">Licensed and insured HVAC contractors serving Huntsville, Alabama and surrounding areas. Honest diagnostics, written quotes, no pressure sales. Serving North Alabama since 2009.</p>
+        <div class="footer__contact-item"><a href="tel:+12562159287">(256) 215-9287</a></div>
+        <div class="footer__contact-item"><a href="mailto:info@huntsvillehvacpros.com">info@huntsvillehvacpros.com</a></div>
       </div>
       <div class="footer__col">
-        <h4>Services</h4>
-        <ul>
+        <h4 class="footer__heading">Services</h4>
+        <ul class="footer__links">
           <li><a href="/services/ac-repair.html">AC Repair</a></li>
           <li><a href="/services/ac-installation.html">AC Installation</a></li>
           <li><a href="/services/heating.html">Heating</a></li>
@@ -176,8 +174,8 @@
         </ul>
       </div>
       <div class="footer__col">
-        <h4>Company</h4>
-        <ul>
+        <h4 class="footer__heading">Company</h4>
+        <ul class="footer__links">
           <li><a href="/about.html">About</a></li>
           <li><a href="/locations/madison.html">Service Areas</a></li>
           <li><a href="/blog/">Blog</a></li>
@@ -186,22 +184,29 @@
         </ul>
       </div>
       <div class="footer__col">
-        <h4>Contact</h4>
-        <p><a href="tel:+12562159287">(256) 215-9287</a></p>
-        <p>info@huntsvillehvacpros.com</p>
-        <p>Serving Huntsville, Madison &amp; all of Madison County, AL</p>
+        <h4 class="footer__heading">Contact</h4>
+        <div class="footer__contact-item"><a href="tel:+12562159287">(256) 215-9287</a></div>
+        <div class="footer__contact-item">info@huntsvillehvacpros.com</div>
+        <div class="footer__contact-item">Serving Huntsville, Madison &amp; all of Madison County, AL</div>
       </div>
     </div>
     <div class="footer__bottom">
-      <p>&copy; 2026 Huntsville HVAC Pros | <a href="/privacy.html">Privacy Policy</a> | <a href="/sitemap.xml">Sitemap</a></p>
+      <span class="footer__copy">&copy; 2026 Huntsville HVAC Pros. All rights reserved.</span>
+      <div class="footer__legal">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
     </div>
   </div>
 </footer>
 
 <!-- ===== MOBILE CTA BAR ===== -->
 <div class="mobile-cta">
-  <a href="tel:+12562159287" class="mobile-cta__call">Call Now</a>
-  <a href="/contact.html" class="mobile-cta__estimate">Free Estimate</a>
+  <a href="tel:+12562159287" class="mobile-cta__btn mobile-cta__btn--call">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    Call Now
+  </a>
+  <a href="/contact.html" class="mobile-cta__btn mobile-cta__btn--estimate">Free Estimate</a>
 </div>
 
 <script>

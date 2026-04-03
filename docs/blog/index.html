@@ -52,98 +52,107 @@
   </script>
 </head>
 <body>
-
-<!-- ===== NAV ===== -->
-<header class="site-header" id="siteHeader">
-  <div class="container site-header__inner">
-    <a href="/" class="site-logo">Huntsville <span>HVAC</span> Pros</a>
-    <nav class="site-nav" id="siteNav">
-      <a href="/services/ac-repair.html" class="nav-link">Services</a>
-      <a href="/about.html" class="nav-link">About</a>
-      <a href="/blog/" class="nav-link active">Blog</a>
-      <a href="/faq.html" class="nav-link">FAQ</a>
-      <a href="/contact.html" class="nav-link">Contact</a>
-    </nav>
-    <a href="tel:+12562159287" class="btn btn-primary nav-cta">Call Now</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
-      <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+<nav class="nav" id="mainNav">
+  <div class="nav__inner">
+    <a href="/" class="nav__logo">Huntsville <span>HVAC</span> Pros</a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="/services/ac-repair.html">Services</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/locations/madison.html">Areas</a></li>
+      <li><a href="/faq.html">FAQ</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="tel:+12562159287" class="nav__cta">Call Now</a></li>
+    </ul>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu">
+      <svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
     </button>
   </div>
-</header>
-
-<!-- ===== HERO ===== -->
+</nav>
 <section class="hero hero--inner">
+  <div class="hero__bg" style="background-image:url('/images/hero-main.webp');"></div>
+  <div class="hero__orb hero__orb--1"></div>
+  <div class="hero__orb hero__orb--2"></div>
   <div class="container">
-    <h1>HVAC Tips &amp; Expert Advice</h1>
-    <p>Practical guides from Huntsville's trusted heating and cooling professionals.</p>
-  </div>
-</section>
-
-<!-- ===== BLOG GRID ===== -->
-<section class="section">
-  <div class="container">
-    <div class="blog-grid">
-
-      <a href="/blog/signs-ac-needs-repair.html" class="blog-card">
-        <img src="/images/blog-signs-repair.webp" alt="Signs your AC needs repair before summer in Huntsville" class="blog-card__img" width="600" height="340" loading="lazy">
-        <div class="blog-card__body">
-          <span class="blog-card__date">March 15, 2026</span>
-          <h2 class="blog-card__title">5 Signs Your AC Needs Repair Before Summer</h2>
-          <p class="blog-card__excerpt">Don't wait for a breakdown. These warning signs mean your AC needs professional attention now.</p>
-          <span class="blog-card__link">Read More &rarr;</span>
-        </div>
-      </a>
-
-      <a href="/blog/choosing-hvac-system-huntsville.html" class="blog-card">
-        <img src="/images/blog-hvac-choice.webp" alt="How to choose the right HVAC system for your Huntsville home" class="blog-card__img" width="600" height="340" loading="lazy">
-        <div class="blog-card__body">
-          <span class="blog-card__date">February 28, 2026</span>
-          <h2 class="blog-card__title">How to Choose the Right HVAC System for Your Huntsville Home</h2>
-          <p class="blog-card__excerpt">Size, efficiency, and budget — everything you need to know before buying a new system.</p>
-          <span class="blog-card__link">Read More &rarr;</span>
-        </div>
-      </a>
-
-      <a href="/blog/summer-ac-prep-huntsville.html" class="blog-card">
-        <img src="/images/blog-summer-prep.webp" alt="Summer AC prep checklist for Huntsville homeowners" class="blog-card__img" width="600" height="340" loading="lazy">
-        <div class="blog-card__body">
-          <span class="blog-card__date">February 10, 2026</span>
-          <h2 class="blog-card__title">Summer AC Prep: A Huntsville Homeowner's Checklist</h2>
-          <p class="blog-card__excerpt">Get your cooling system ready before the Alabama heat hits with this step-by-step guide.</p>
-          <span class="blog-card__link">Read More &rarr;</span>
-        </div>
-      </a>
-
-      <a href="/blog/how-much-does-hvac-cost-huntsville.html" class="blog-card">
-        <img src="/images/blog-hvac-choice.webp" alt="HVAC service costs in Huntsville Alabama" class="blog-card__img" width="600" height="340" loading="lazy">
-        <div class="blog-card__body">
-          <span class="blog-card__date">January 20, 2026</span>
-          <h2 class="blog-card__title">How Much Does HVAC Service Cost in Huntsville?</h2>
-          <p class="blog-card__excerpt">Real pricing data for AC repair, installation, and maintenance in the Huntsville area.</p>
-          <span class="blog-card__link">Read More &rarr;</span>
-        </div>
-      </a>
-
+    <div class="hero__content" style="max-width:720px;">
+      <span class="hero__badge">HVAC Tips for Huntsville Homeowners</span>
+      <h1 class="hero__title">HVAC Resources &amp; Guides</h1>
+      <p class="hero__subtitle">Practical advice on AC repair, heating, maintenance, and everything HVAC in North Alabama.</p>
     </div>
   </div>
 </section>
 
-<!-- ===== FOOTER ===== -->
-<footer class="site-footer">
+<section class="why" style="background:var(--color-white);padding:5rem 0;">
+  <div class="container">
+    <div class="why__header reveal">
+      <h2 class="section-title">Latest Articles</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-top:3rem;">
+      <a href="/blog/signs-ac-needs-repair.html" class="bento__card reveal" style="text-decoration:none;">
+        <div style="height:200px;background:linear-gradient(135deg,var(--color-dark) 0%,var(--color-accent) 100%);border-radius:12px 12px 0 0;display:flex;align-items:center;justify-content:center;font-size:3rem;">❄️</div>
+        <div style="padding:1.5rem;">
+          <span style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--color-accent);">AC Repair</span>
+          <h3 style="margin:.5rem 0 .75rem;color:var(--color-dark);">5 Signs Your AC Needs Repair Before Summer</h3>
+          <p style="color:var(--color-text-light);font-size:.9375rem;line-height:1.6;">Catch small problems before they become expensive failures. These warning signs mean it's time to call.</p>
+          <span class="bento__link" style="opacity:1;transform:none;margin-top:1rem;display:inline-flex;align-items:center;gap:.5rem;color:var(--color-accent);font-weight:700;font-size:.875rem;">Read Article →</span>
+        </div>
+      </a>
+      <a href="/blog/summer-ac-prep-huntsville.html" class="bento__card reveal" style="text-decoration:none;">
+        <div style="height:200px;background:linear-gradient(135deg,#1e3a5f 0%,#f97316 100%);border-radius:12px 12px 0 0;display:flex;align-items:center;justify-content:center;font-size:3rem;">☀️</div>
+        <div style="padding:1.5rem;">
+          <span style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--color-accent);">Maintenance</span>
+          <h3 style="margin:.5rem 0 .75rem;color:var(--color-dark);">How to Prep Your HVAC for Huntsville Summers</h3>
+          <p style="color:var(--color-text-light);font-size:.9375rem;line-height:1.6;">Huntsville summers are brutal. Here's how to make sure your system is ready before the heat hits.</p>
+          <span class="bento__link" style="opacity:1;transform:none;margin-top:1rem;display:inline-flex;align-items:center;gap:.5rem;color:var(--color-accent);font-weight:700;font-size:.875rem;">Read Article →</span>
+        </div>
+      </a>
+      <a href="/blog/choosing-hvac-system-huntsville.html" class="bento__card reveal" style="text-decoration:none;">
+        <div style="height:200px;background:linear-gradient(135deg,#1a2744 0%,#22c55e 100%);border-radius:12px 12px 0 0;display:flex;align-items:center;justify-content:center;font-size:3rem;">🏠</div>
+        <div style="padding:1.5rem;">
+          <span style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--color-accent);">Buying Guide</span>
+          <h3 style="margin:.5rem 0 .75rem;color:var(--color-dark);">Choosing the Right HVAC System for Your Huntsville Home</h3>
+          <p style="color:var(--color-text-light);font-size:.9375rem;line-height:1.6;">SEER ratings, tonnage, heat pumps vs. gas furnaces — what actually matters for North Alabama homes.</p>
+          <span class="bento__link" style="opacity:1;transform:none;margin-top:1rem;display:inline-flex;align-items:center;gap:.5rem;color:var(--color-accent);font-weight:700;font-size:.875rem;">Read Article →</span>
+        </div>
+      </a>
+      <a href="/blog/how-much-does-hvac-cost-huntsville.html" class="bento__card reveal" style="text-decoration:none;">
+        <div style="height:200px;background:linear-gradient(135deg,#1e293b 0%,#8b5cf6 100%);border-radius:12px 12px 0 0;display:flex;align-items:center;justify-content:center;font-size:3rem;">💰</div>
+        <div style="padding:1.5rem;">
+          <span style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--color-accent);">Pricing</span>
+          <h3 style="margin:.5rem 0 .75rem;color:var(--color-dark);">How Much Does HVAC Repair Cost in Huntsville?</h3>
+          <p style="color:var(--color-text-light);font-size:.9375rem;line-height:1.6;">Real price ranges for common repairs and replacements. Know what to expect before you call.</p>
+          <span class="bento__link" style="opacity:1;transform:none;margin-top:1rem;display:inline-flex;align-items:center;gap:.5rem;color:var(--color-accent);font-weight:700;font-size:.875rem;">Read Article →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <div class="cta__inner reveal">
+      <span class="cta__urgency">Same-Day Service · Free Estimates</span>
+      <h2 class="cta__title">Ready to Fix Your HVAC?</h2>
+      <p class="cta__desc">Don't wait until it breaks down completely. Call Huntsville's most trusted HVAC team.</p>
+      <div class="cta__buttons">
+        <a href="tel:+12562159287" class="btn btn--primary">Call (256) 215-9287</a>
+        <a href="/contact.html" class="btn btn--outline">Get Free Estimate</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
   <div class="container">
     <div class="footer__grid">
-      <div class="footer__col">
-        <a href="/" class="footer__brand">Huntsville <span>HVAC</span> Pros</a>
-        <p>Licensed, insured HVAC contractors serving Huntsville and Madison County. Honest service since 2009.</p>
-        <div class="footer__social">
-          <a href="#" aria-label="Facebook"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
-          <a href="#" aria-label="Google"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg></a>
-          <a href="#" aria-label="Yelp"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.926-4.308c.564-.832 1.836-.476 1.92.537l.325 3.898c.024.288-.096.564-.336.756l-.664.514zm-8.77 5.028l-1.2-4.896c-.24-.984.936-1.668 1.776-1.032l4.356 3.3c.528.396.384 1.236-.216 1.404l-4.272 1.2c-.168.048-.312.024-.444-.024v.048zm-2.088-6.372L5.262 8.622c-.66-.42-.444-1.404.324-1.5l5.1-.636c.456-.06.852.276.912.744l.576 4.656c.084.684-.768 1.056-1.26.528l-.612-.564v-.6zm-3.456 4.62l4.464-2.472c.888-.492 1.812.492 1.392 1.44l-2.148 4.86c-.276.624-1.14.66-1.356.06l-2.388-3.048c-.18-.228-.168-.528.036-.84zm6.024-10.356l.216 5.1c.036.864-1.044 1.248-1.596.564l-4.02-5.016c-.348-.432-.06-1.068.468-1.14l4.14-.516c.432-.06.768.276.792.708v.3z"/></svg></a>
-        </div>
+      <div class="footer__col footer__col--brand">
+        <div class="footer__brand-name">Huntsville <span>HVAC</span> Pros</div>
+        <p class="footer__brand-desc">Licensed and insured HVAC contractors serving Huntsville, Alabama and surrounding areas. Honest diagnostics, written quotes, no pressure sales. Serving North Alabama since 2009.</p>
+        <div class="footer__contact-item"><a href="tel:+12562159287">(256) 215-9287</a></div>
+        <div class="footer__contact-item"><a href="mailto:info@huntsvillehvacpros.com">info@huntsvillehvacpros.com</a></div>
       </div>
       <div class="footer__col">
-        <h4>Services</h4>
-        <ul>
+        <h4 class="footer__heading">Services</h4>
+        <ul class="footer__links">
           <li><a href="/services/ac-repair.html">AC Repair</a></li>
           <li><a href="/services/ac-installation.html">AC Installation</a></li>
           <li><a href="/services/heating.html">Heating</a></li>
@@ -152,8 +161,8 @@
         </ul>
       </div>
       <div class="footer__col">
-        <h4>Company</h4>
-        <ul>
+        <h4 class="footer__heading">Company</h4>
+        <ul class="footer__links">
           <li><a href="/about.html">About</a></li>
           <li><a href="/locations/madison.html">Service Areas</a></li>
           <li><a href="/blog/">Blog</a></li>
@@ -162,50 +171,54 @@
         </ul>
       </div>
       <div class="footer__col">
-        <h4>Contact</h4>
-        <p><a href="tel:+12562159287">(256) 215-9287</a></p>
-        <p>info@huntsvillehvacpros.com</p>
-        <p>Serving Huntsville, Madison &amp; all of Madison County, AL</p>
+        <h4 class="footer__heading">Contact</h4>
+        <div class="footer__contact-item"><a href="tel:+12562159287">(256) 215-9287</a></div>
+        <div class="footer__contact-item">info@huntsvillehvacpros.com</div>
+        <div class="footer__contact-item">Serving Huntsville, Madison &amp; all of Madison County, AL</div>
       </div>
     </div>
     <div class="footer__bottom">
-      <p>&copy; 2026 Huntsville HVAC Pros | <a href="/privacy.html">Privacy Policy</a> | <a href="/sitemap.xml">Sitemap</a></p>
+      <span class="footer__copy">&copy; 2026 Huntsville HVAC Pros. All rights reserved.</span>
+      <div class="footer__legal">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
     </div>
   </div>
 </footer>
-
-<!-- ===== MOBILE CTA BAR ===== -->
 <div class="mobile-cta">
-  <a href="tel:+12562159287" class="mobile-cta__call">Call Now</a>
-  <a href="/contact.html" class="mobile-cta__estimate">Free Estimate</a>
+  <a href="tel:+12562159287" class="mobile-cta__btn mobile-cta__btn--call">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    Call Now
+  </a>
+  <a href="/contact.html" class="mobile-cta__btn mobile-cta__btn--estimate">Free Estimate</a>
 </div>
-
 <script>
-  // Nav scroll effect
-  const header = document.getElementById('siteHeader');
-  window.addEventListener('scroll', () => {
-    header.classList.toggle('scrolled', window.scrollY > 50);
-  }, {passive: true});
-
-  // Mobile nav toggle
-  const navToggle = document.getElementById('navToggle');
-  const siteNav = document.getElementById('siteNav');
-  navToggle.addEventListener('click', () => {
-    siteNav.classList.toggle('mobile-open');
-    document.body.classList.toggle('nav-open');
+document.documentElement.classList.add("js");
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+}, { passive: true });
+document.getElementById('navToggle').addEventListener('click', () => {
+  document.getElementById('navLinks').classList.toggle('open');
+});
+document.querySelectorAll('.faq__question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq__item');
+    const isOpen = item.classList.contains('active');
+    document.querySelectorAll('.faq__item').forEach(i => i.classList.remove('active'));
+    if (!isOpen) item.classList.add('active');
   });
-
-  // Scroll reveal
-  const revealEls = document.querySelectorAll('.blog-card');
+});
+const revealEls = document.querySelectorAll('.reveal');
+if (revealEls.length) {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('revealed');
-        observer.unobserve(entry.target);
-      }
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
     });
-  }, {threshold: 0.1});
+  }, { threshold: 0.15 });
   revealEls.forEach(el => observer.observe(el));
+}
 </script>
 </body>
 </html>
