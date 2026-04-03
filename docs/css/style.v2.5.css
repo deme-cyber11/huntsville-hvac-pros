@@ -1951,3 +1951,24 @@ section[style*="--color-white"] .why__stat-card p { color: var(--color-text-ligh
     margin-top: 0.5rem;
   }
 }
+
+/* ========== SECTION SUBTITLE READABILITY ON DARK SECTIONS ========== */
+/* Default .section-subtitle is var(--color-text-light) = grey — invisible on dark bg */
+.why .section-subtitle,
+.process .section-subtitle,
+.cta-section .section-subtitle {
+  color: rgba(255, 255, 255, 0.82);
+}
+/* White sections restore normal color */
+section[style*="--color-white"] .section-subtitle { color: var(--color-text-light); }
+
+/* Prevent image overflow from bleeding into next sections */
+.why { overflow: hidden; }
+
+/* CTA inner — fix legacy hero__buttons not centering */
+.cta-section .hero__buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
