@@ -410,7 +410,7 @@ html.js .reveal.visible {
   min-height: auto;
   padding: 140px 0 80px;
 }
-.hero--inner .hero__bg { opacity: 0.08; }
+.hero--inner .hero__bg { display: none; }
 .hero__subtitle { text-shadow: 0 1px 4px rgba(0,0,0,0.6); }
 
 /* ========== 3. TRUST BAR ========== */
