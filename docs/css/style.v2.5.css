@@ -410,6 +410,8 @@ html.js .reveal.visible {
   min-height: auto;
   padding: 140px 0 80px;
 }
+.hero--inner .hero__bg { opacity: 0.08; }
+.hero__subtitle { text-shadow: 0 1px 4px rgba(0,0,0,0.6); }
 
 /* ========== 3. TRUST BAR ========== */
 .trust-bar {
@@ -1822,3 +1824,17 @@ html.js .reveal.visible {
 }
 .breadcrumb__inner a:hover { color: var(--color-accent); }
 .breadcrumb__sep { opacity: 0.4; }
+
+/* ========== RESPONSIVE 2-COL GRID ========== */
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+@media (max-width: 768px) {
+  .two-col-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
