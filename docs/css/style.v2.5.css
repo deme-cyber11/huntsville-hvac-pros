@@ -1972,3 +1972,20 @@ section[style*="--color-white"] .section-subtitle { color: var(--color-text-ligh
   justify-content: center;
   flex-wrap: wrap;
 }
+
+/* ========== CTA SECTION — MOBILE FIX ========== */
+/* 400px + 500px circles overlap on narrow screens creating "coil" artifact */
+@media (max-width: 768px) {
+  .cta-section::before,
+  .cta-section::after { display: none; }
+  .cta__buttons, .cta-section .hero__buttons {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cta__buttons .btn, .cta-section .hero__buttons .btn {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+}
