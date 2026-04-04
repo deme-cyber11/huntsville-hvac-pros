@@ -8,6 +8,7 @@
 
 :root {
   --color-primary: #1a1a2e;
+  --color-dark: #1a1a2e; /* alias — always equal to --color-primary */
   --color-primary-light: #16213e;
   --color-surface: #f1f5f9;
   --color-surface-alt: #f8fafc;
@@ -1912,7 +1913,7 @@ section[style*="--color-white"] .why__stat-card,
   border-color: #e2e8f0;
 }
 section[style*="--color-white"] .why__stat-card strong,
-.why[style*="--color-white"] .why__stat-card h3 { color: var(--color-dark); }
+.why[style*="--color-white"] .why__stat-card h3 { color: var(--color-primary); }
 section[style*="--color-white"] .why__stat-card p { color: var(--color-text-light); }
 
 /* Mobile */
@@ -1937,7 +1938,7 @@ section[style*="--color-white"] .why__stat-card p { color: var(--color-text-ligh
 }
 .pricing-row__label {
   font-weight: 600;
-  color: var(--color-dark);
+  color: var(--color-primary);
   flex: 1;
   min-width: 0;
 }
@@ -1997,7 +1998,7 @@ section[style*="--color-white"] .section-subtitle { color: var(--color-text-ligh
 
 /* ========== WHY DARK SECTIONS — TITLE COLOR ========== */
 /* Stat-card why sections now have dark background — title must be white */
-.why[style*="--color-dark"] .section-title,
+.why[style*="--color-primary"] .section-title,
 .why[style*="--color-primary"] .section-title {
   color: var(--color-white);
 }
