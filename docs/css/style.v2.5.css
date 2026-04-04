@@ -526,6 +526,10 @@ html.js .reveal.visible {
   z-index: 2;
 }
 .bento__tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 3;
   display: inline-block;
   background: var(--color-accent);
   color: var(--color-white);
@@ -535,7 +539,6 @@ html.js .reveal.visible {
   letter-spacing: 0.1em;
   padding: 4px 12px;
   border-radius: 80px;
-  margin-bottom: 12px;
 }
 .bento__title {
   font-size: 1.5rem;
