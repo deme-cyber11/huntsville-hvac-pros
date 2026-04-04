@@ -1992,3 +1992,18 @@ section[style*="--color-white"] .section-subtitle { color: var(--color-text-ligh
 .why[style*="--color-white"] .section-title {
   color: var(--color-text);
 }
+
+/* ========== BLOG ARTICLE HERO — raw h1/p text color ========== */
+/* Blog post heroes use plain h1+p without hero__title class — needs explicit white */
+.hero--inner h1 {
+  color: var(--color-white);
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+.hero--inner h1 + p {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.9375rem;
+}
