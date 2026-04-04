@@ -410,7 +410,7 @@ html.js .reveal.visible {
 /* Inner page hero (shorter) */
 .hero--inner {
   min-height: auto;
-  padding: 140px 0 80px;
+  padding: 100px 0 50px;
 }
 .hero--inner .hero__bg { display: none !important; opacity: 0 !important; visibility: hidden !important; }
 .hero__subtitle {
