@@ -1994,3 +1994,14 @@ section[style*="--color-white"] .section-subtitle { color: var(--color-text-ligh
     justify-content: center;
   }
 }
+
+/* ========== WHY DARK SECTIONS — TITLE COLOR ========== */
+/* Stat-card why sections now have dark background — title must be white */
+.why[style*="--color-dark"] .section-title,
+.why[style*="--color-primary"] .section-title {
+  color: var(--color-white);
+}
+/* White sections restore dark title */
+.why[style*="--color-white"] .section-title {
+  color: var(--color-text);
+}
