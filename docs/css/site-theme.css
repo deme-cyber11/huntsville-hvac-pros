@@ -1,0 +1,69 @@
+/* Huntsville HVAC Pros — site-specific color overrides for v2.5 */
+:root {
+  --color-accent:      #f97316;
+  --color-accent-dark: #ea580c;
+  --color-accent-glow: rgba(249, 115, 22, 0.3);
+}
+
+/* Fixed header clearance */
+.page-hero    { padding-top: 7rem; padding-bottom: 3rem; }
+.service-hero { padding-top: 7rem; }
+@media (max-width: 768px) {
+  .page-hero    { padding-top: 6rem; padding-bottom: 2.5rem; }
+  .service-hero { padding-top: 6rem; }
+}
+
+/* Mobile contact grid */
+@media (max-width: 640px) {
+  .contact-grid { grid-template-columns: 1fr !important; }
+  .contact-info-card,
+  .contact-info-column,
+  .contact-form-column { min-width: 0; max-width: 100%; }
+  .contact-email-link,
+  .contact-info-card a,
+  .contact-info-card span { word-break: break-word; overflow-wrap: anywhere; }
+}
+
+/* Scrollable wide tables */
+main table,
+.content-container table,
+.content-section table,
+.blog-article-content table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+@media (max-width: 768px) {
+  .blog-article-content table {
+    width: auto !important;
+    min-width: 460px;
+  }
+}
+
+/* Restore list padding stripped by reset */
+.svc-section ul,
+.loc-section ul,
+.blog-article-content ul,
+.content-section ul,
+.calc-content ul,
+.faq-item ul { padding-left: 1.6rem; }
+.svc-section li,
+.loc-section li,
+.blog-article-content li,
+.content-section li,
+.calc-content li { margin-bottom: 0.4rem; }
+
+/* Testimonial legibility */
+.testimonial-card::before,
+.testimonial-section .testimonial-quote::before { content: none !important; }
+.testimonial-card__text {
+  font-style: normal !important;
+  color: rgba(241, 245, 249, 0.95) !important;
+}
+.testimonial-section h2 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.testimonial-section .testimonial-quote { font-style: normal !important; }

@@ -30,6 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.v2.5.css?v=8">
+  <link rel="stylesheet" href="/css/site-theme.css">
 
   <!-- BreadcrumbList Schema -->
   <script type="application/ld+json">
@@ -117,7 +118,7 @@
       <div>
         <h2 class="section-title" style="margin-bottom:2rem;">Request a Free Estimate</h2>
         <form action="https://lead-manager-api.irontigerdigital.workers.dev/ingest" method="POST" style="display:flex;flex-direction:column;gap:1rem;">
-        <input type="hidden" name="_honey" style="display:none">
+        <input type="text" name="_honey" style="display:none !important;position:absolute;left:-9999px" tabindex="-1" autocomplete="off">
           <input type="hidden" name="_subject" value="New HVAC Estimate Request — HuntsvilleHVACPros.com">
           <input type="hidden" name="redirect" value="https://huntsvillehvacpros.com/thank-you.html">
           <div class="why__stats">
