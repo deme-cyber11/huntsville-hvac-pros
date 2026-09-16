@@ -89,7 +89,9 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
     <p>Tell us about your system so we can schedule service quickly.</p>
   </div>
 
-  <form id="form" action="https://lead-manager-api.irontigerdigital.workers.dev/ingest" method="POST">
+  <div id="form-success" style="display:none;background:#ecfdf5;border:1.5px solid #10b981;border-radius:10px;padding:20px;color:#065f46;margin-bottom:16px" role="status" aria-live="polite"><strong>Thanks — we got your request.</strong><br>We'll reach out shortly. Need us sooner? Call <a href="tel:2562159287">(256) 215-9287</a>.</div>
+<div id="form-error" style="display:none;background:#fef2f2;border:1.5px solid #ef4444;border-radius:10px;padding:20px;color:#7f1d1d;margin-bottom:16px" role="alert" aria-live="assertive"></div>
+  <form id="form" action="https://lead-manager-api.irontigerdigital.workers.dev/ingest" method="POST" enctype="multipart/form-data" data-success="form-success" data-error="form-error" data-strict="false" data-fallback-tel="(256) 215-9287" data-require-one="services[]">
     <input type="hidden" name="site_domain" value="huntsvillehvacpros.com">
     <input type="hidden" name="_subject" value="New Estimate Request — Huntsville HVAC Pros">
     <input type="hidden" name="_redirect" value="https://huntsvillehvacpros.com/estimate/#success">
@@ -106,21 +108,33 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
       <div class="row">
         <div class="field">
           <label for="name">Full Name <span class="req">*</span></label>
-          <input type="text" id="name" name="name" required placeholder="John Smith">
+          <input type="text" id="name" name="name" required placeholder="John Smith" autocomplete="name" maxlength="80">
         </div>
         <div class="field">
           <label for="phone">Phone Number <span class="req">*</span></label>
-          <input type="tel" id="phone" name="phone" required placeholder="(256) 215-9287">
+          <input type="tel" id="phone" name="phone" required placeholder="(256) 215-9287" autocomplete="tel" inputmode="tel" maxlength="20" pattern="\+?1?[\s.\-]?\(?[0-9]{3}\)?[\s.\-]?[0-9]{3}[\s.\-]?[0-9]{4}" title="10-digit US phone number, e.g. (555) 123-4567">
         </div>
       </div>
       <div class="field">
         <label for="email">Email Address <span class="req">*</span></label>
-        <input type="email" id="email" name="email" required placeholder="you@example.com">
+        <input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email" maxlength="120">
       </div>
       <div class="field" style="margin-bottom:0">
         <label for="address">Property Address <span class="req">*</span></label>
-        <input type="text" id="address" name="address" required placeholder="123 Main St, City, State ZIP">
+        <input type="text" id="address" name="address" required placeholder="123 Main St, City, State ZIP" autocomplete="address-line1" maxlength="120">
       </div>
+      <div class="field">
+          <label for="city">City <span class="req">*</span></label>
+          <input type="text" id="city" name="city" required autocomplete="address-level2" maxlength="60">
+        </div>
+        <div class="field">
+          <label for="state">State</label>
+          <input type="text" id="state" name="state" autocomplete="address-level1" maxlength="2" pattern="[A-Za-z]{2}" title="2-letter state code">
+        </div>
+        <div class="field">
+          <label for="zip">ZIP Code <span class="req">*</span></label>
+          <input type="text" id="zip" name="zip" required autocomplete="postal-code" inputmode="numeric" maxlength="10" pattern="[0-9]{5}(-[0-9]{4})?" title="5-digit ZIP">
+        </div>
     </div>
 
     <!-- Service Details -->
@@ -166,7 +180,7 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
       </div>
     <div class="field">
       <label for="system_type">System Type</label>
-      <select id="system_type" name="system_type">
+      <select id="system_type" name="system_type" required>
         <option value="">Select if known...</option>
           <option>Central AC + furnace</option>
           <option>Heat pump</option>
@@ -178,7 +192,7 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
     </div>
     <div class="field">
       <label for="system_age">System Age</label>
-      <select id="system_age" name="system_age">
+      <select id="system_age" name="system_age" required>
         <option value="">Select if known...</option>
           <option>Under 5 years</option>
           <option>5–10 years</option>
@@ -190,7 +204,7 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
     </div>
     <div class="field" style="margin-bottom:0">
       <label for="home_sqft">Home Square Footage</label>
-      <select id="home_sqft" name="home_sqft">
+      <select id="home_sqft" name="home_sqft" required>
         <option value="">Select if known...</option>
           <option>Under 1,000 sq ft</option>
           <option>1,000–1,500 sq ft</option>
@@ -275,7 +289,7 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
       </div>
       <div class="field">
         <label for="notes">Project Description <span class="req">*</span></label>
-        <textarea id="notes" name="notes" rows="4" required placeholder="Describe the project in more detail, any concerns, previous quotes received, access issues, etc."></textarea>
+        <textarea id="notes" name="notes" rows="4" required placeholder="Describe the project in more detail, any concerns, previous quotes received, access issues, etc." minlength="10" maxlength="2000"></textarea>
       </div>
       <div class="field" style="margin-bottom:0">
         <label>Photos <span class="hint">(optional — helps us give a more accurate estimate)</span></label>
@@ -324,6 +338,7 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
 if(window.location.hash==='#success'){document.getElementById('form').style.display='none';document.getElementById('success').style.display='block';}
 document.getElementById('photos').addEventListener('change',function(){document.getElementById('upload-label').textContent=this.files.length?this.files.length+' photo'+(this.files.length>1?'s':'')+' selected':'Tap to upload photos';});
 </script>
+<script src="/js/form.js" defer></script>
 </body>
 </html>
 <h2>Professional Estimate in Huntsville, AL</h2>
