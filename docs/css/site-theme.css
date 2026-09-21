@@ -67,3 +67,77 @@ main table,
   margin-bottom: 2.5rem;
 }
 .testimonial-section .testimonial-quote { font-style: normal !important; }
+
+
+/* ── ITD-LEGIBILITY-V1 — text legibility (2026-09-21) ───────────────────────
+   tools/contrast-sweep.py measured these elements rendering near-black on a dark
+   background, i.e. genuinely unreadable rather than merely dim. The cause is a
+   class-name drift in the shared template: style.v2.5.css styles .hero__subtitle
+   while the markup uses .hero__sub, so the rule matched nothing and the text fell
+   back to body's colour. The same gap reaches testimonials, card links, pricing
+   cards and the footer.
+
+   Set here rather than in style.v2.5.css because that file is shared across every
+   site; this one is the site-specific override and loads last, so it wins without
+   a specificity fight. Colours are given explicitly so nothing here depends on a
+   variable that may not exist on a given site. */
+
+/* Hero — sits on a dark image or gradient on every site in the portfolio */
+.hero__sub,
+.hero__subtitle,
+.hero p,
+.hero li {
+  color: rgba(255, 255, 255, 0.92);
+}
+.hero__trust,
+.hero__rating,
+.hero__trust li,
+.hero__trust span {
+  color: rgba(255, 255, 255, 0.88);
+}
+.stars {
+  color: #ffc857;                    /* gold, so a rating reads as a rating */
+  letter-spacing: 0.08em;
+}
+.hero__content a:not(.btn),
+.hero a:not(.btn) {
+  color: rgba(255, 255, 255, 0.95);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Testimonials — dark cards. Measured at a spread of 2 on badlandsradon, meaning
+   the quote was invisible while the card around it looked perfectly designed. */
+.testimonial-card__text,
+.testimonial-card p,
+.testimonial-quote {
+  color: rgba(241, 245, 249, 0.95);
+}
+.testimonial-card__author,
+.testimonial-location {
+  color: rgba(241, 245, 249, 0.72);
+}
+
+/* Footer — background is near-black, links were inheriting near-black text. These
+   are internal links, so Google was following navigation no visitor could see. */
+.footer a,
+footer a {
+  color: rgba(241, 245, 249, 0.82);
+}
+.footer a:hover,
+footer a:focus-visible {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.footer p,
+.footer li,
+footer p {
+  color: rgba(241, 245, 249, 0.72);
+}
+.footer h3,
+.footer h4,
+footer h3,
+footer h4 {
+  color: #ffffff;
+}
