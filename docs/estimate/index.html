@@ -129,7 +129,7 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
         </div>
         <div class="field">
           <label for="state">State</label>
-          <input type="text" id="state" name="state" autocomplete="address-level1" maxlength="2" pattern="[A-Za-z]{2}" title="2-letter state code">
+          <input onchange="this.value=this.value.trim()" type="text" id="state" name="state" autocomplete="address-level1" maxlength="20" pattern="[A-Za-z .]{2,20}" title="State — 2-letter code or full name">
         </div>
         <div class="field">
           <label for="zip">ZIP Code <span class="req">*</span></label>
