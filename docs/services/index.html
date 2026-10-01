@@ -11,16 +11,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.v2.5.css?v=8">
-  <link rel="stylesheet" href="/css/site-theme.css">
+  <link rel="stylesheet" href="/css/style.v2.5.css?v=20261001">
+  <link rel="stylesheet" href="/css/site-theme.css?v=20261001">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
     {"@type":"ListItem","position":1,"name":"Home","item":"https://huntsvillehvacpros.com/"},
     {"@type":"ListItem","position":2,"name":"Services","item":"https://huntsvillehvacpros.com/services/"}
   ]}
   </script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="/css/modern.css?v=20261001">
 </head>
-<body class="js">
+<body class="hv hv-hub js">
 
 <!-- ===== NAV ===== -->
 <nav class="nav" id="mainNav">
@@ -42,7 +43,7 @@
 </nav>
 
 <!-- ===== HERO ===== -->
-<section class="hero hero--inner">
+<section class="hero hero--inner" style="--hero-img:url(/images/hero-main.webp)">
   <div class="container">
     <div class="hero__content">
       <span class="hero__badge">Licensed &amp; Insured · Same-Day Response</span>
@@ -60,7 +61,7 @@
 </section>
 
 <!-- ===== SERVICES GRID ===== -->
-<section class="why" style="background:var(--color-white);padding:5rem 0;">
+<section class="hv-band why" style="padding:5rem 0;">
   <div class="container">
     <div class="why__header reveal">
       <h2 class="section-title">What We Do</h2>
@@ -70,53 +71,53 @@
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-top:3rem;">
 
       <!-- AC Repair -->
-      <a href="/services/ac-repair.html" class="why__stat-card reveal" style="text-decoration:none;display:block;background:var(--color-primary);border:1px solid rgba(255,255,255,0.1);padding:2rem;border-radius:12px;transition:transform .25s ease,box-shadow .25s ease;">
-        <div style="width:48px;height:48px;background:rgba(14,165,233,0.15);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;color:var(--color-accent);">
+      <a href="/services/ac-repair.html" class="why__stat-card hv-svc-card reveal">
+        <div class="hv-badge">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
         </div>
-        <h3 style="color:#fff;font-size:1.125rem;font-weight:700;margin:0 0 .5rem;">AC Repair</h3>
-        <p style="color:rgba(255,255,255,0.72);font-size:.9rem;line-height:1.6;margin:0 0 1rem;">Same-day AC repair for Huntsville homes. Written diagnosis before we touch anything. Most repairs completed in one visit.</p>
-        <span style="color:var(--color-accent);font-weight:700;font-size:.875rem;">Learn More →</span>
+        <h3>AC Repair</h3>
+        <p>Same-day AC repair for Huntsville homes. Written diagnosis before we touch anything. Most repairs completed in one visit.</p>
+        <span class="hv-more">Learn More →</span>
       </a>
 
       <!-- AC Installation -->
-      <a href="/services/ac-installation.html" class="why__stat-card reveal" style="text-decoration:none;display:block;background:var(--color-primary);border:1px solid rgba(255,255,255,0.1);padding:2rem;border-radius:12px;transition:transform .25s ease,box-shadow .25s ease;">
-        <div style="width:48px;height:48px;background:rgba(14,165,233,0.15);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;color:var(--color-accent);">
+      <a href="/services/ac-installation.html" class="why__stat-card hv-svc-card reveal">
+        <div class="hv-badge">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
         </div>
-        <h3 style="color:#fff;font-size:1.125rem;font-weight:700;margin:0 0 .5rem;">AC Installation</h3>
-        <p style="color:rgba(255,255,255,0.72);font-size:.9rem;line-height:1.6;margin:0 0 1rem;">New system sizing, brand selection, and professional installation. Carrier, Trane, Lennox, and Goodman. Free in-home estimate.</p>
-        <span style="color:var(--color-accent);font-weight:700;font-size:.875rem;">Learn More →</span>
+        <h3>AC Installation</h3>
+        <p>New system sizing, brand selection, and professional installation. Carrier, Trane, Lennox, and Goodman. Free in-home estimate.</p>
+        <span class="hv-more">Learn More →</span>
       </a>
 
       <!-- Heating -->
-      <a href="/services/heating.html" class="why__stat-card reveal" style="text-decoration:none;display:block;background:var(--color-primary);border:1px solid rgba(255,255,255,0.1);padding:2rem;border-radius:12px;transition:transform .25s ease,box-shadow .25s ease;">
-        <div style="width:48px;height:48px;background:rgba(14,165,233,0.15);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;color:var(--color-accent);">
+      <a href="/services/heating.html" class="why__stat-card hv-svc-card reveal">
+        <div class="hv-badge">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c0 6-6 6-6 12a6 6 0 0012 0c0-6-6-6-6-12z"/><path d="M12 22v-4"/></svg>
         </div>
-        <h3 style="color:#fff;font-size:1.125rem;font-weight:700;margin:0 0 .5rem;">Heating &amp; Furnace</h3>
-        <p style="color:rgba(255,255,255,0.72);font-size:.9rem;line-height:1.6;margin:0 0 1rem;">Gas furnace repair, heat pump service, and heating system installation. Keep your Huntsville home warm all winter.</p>
-        <span style="color:var(--color-accent);font-weight:700;font-size:.875rem;">Learn More →</span>
+        <h3>Heating &amp; Furnace</h3>
+        <p>Gas furnace repair, heat pump service, and heating system installation. Keep your Huntsville home warm all winter.</p>
+        <span class="hv-more">Learn More →</span>
       </a>
 
       <!-- Maintenance -->
-      <a href="/services/maintenance.html" class="why__stat-card reveal" style="text-decoration:none;display:block;background:var(--color-primary);border:1px solid rgba(255,255,255,0.1);padding:2rem;border-radius:12px;transition:transform .25s ease,box-shadow .25s ease;">
-        <div style="width:48px;height:48px;background:rgba(14,165,233,0.15);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;color:var(--color-accent);">
+      <a href="/services/maintenance.html" class="why__stat-card hv-svc-card reveal">
+        <div class="hv-badge">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <h3 style="color:#fff;font-size:1.125rem;font-weight:700;margin:0 0 .5rem;">Maintenance Plans</h3>
-        <p style="color:rgba(255,255,255,0.72);font-size:.9rem;line-height:1.6;margin:0 0 1rem;">Twice-yearly tune-ups, priority scheduling, and discounted repairs. Catch problems before they become emergencies.</p>
-        <span style="color:var(--color-accent);font-weight:700;font-size:.875rem;">Learn More →</span>
+        <h3>Maintenance Plans</h3>
+        <p>Twice-yearly tune-ups, priority scheduling, and discounted repairs. Catch problems before they become emergencies.</p>
+        <span class="hv-more">Learn More →</span>
       </a>
 
       <!-- Emergency -->
-      <a href="/services/emergency.html" class="why__stat-card reveal" style="text-decoration:none;display:block;background:rgba(220,38,38,0.12);border:1px solid rgba(220,38,38,0.25);padding:2rem;border-radius:12px;transition:transform .25s ease,box-shadow .25s ease;">
-        <div style="width:48px;height:48px;background:rgba(220,38,38,0.15);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;color:#f87171;">
+      <a href="/services/emergency.html" class="why__stat-card hv-svc-card reveal">
+        <div class="hv-badge">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
         </div>
-        <h3 style="color:#fca5a5;font-size:1.125rem;font-weight:700;margin:0 0 .5rem;">24/7 Emergency Service</h3>
-        <p style="color:rgba(255,255,255,0.72);font-size:.9rem;line-height:1.6;margin:0 0 1rem;">HVAC emergency? We dispatch same-day and target 2–4 hour response times across Huntsville and Madison County.</p>
-        <span style="color:#f87171;font-weight:700;font-size:.875rem;">Get Help Now →</span>
+        <h3>24/7 Emergency Service</h3>
+        <p>HVAC emergency? We dispatch same-day and target 2–4 hour response times across Huntsville and Madison County.</p>
+        <span class="hv-more">Get Help Now →</span>
       </a>
 
     </div>
@@ -124,7 +125,7 @@
 </section>
 
 <!-- ===== WHY CHOOSE ===== -->
-<section class="why" style="background:var(--color-primary);">
+<section class="hv-band hv-band--dark why">
   <div class="container">
     <div class="why__header reveal">
       <h2 class="section-title">Every Service Comes With</h2>

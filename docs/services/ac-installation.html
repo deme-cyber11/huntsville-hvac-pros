@@ -29,8 +29,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.v2.5.css?v=8">
-  <link rel="stylesheet" href="/css/site-theme.css">
+  <link rel="stylesheet" href="/css/style.v2.5.css?v=20261001">
+  <link rel="stylesheet" href="/css/site-theme.css?v=20261001">
 
   <!-- Schema: BreadcrumbList -->
   <script type="application/ld+json">
@@ -80,8 +80,9 @@
       y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "vqcd6y8eot");
   </script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="/css/modern.css?v=20261001">
 </head>
-<body>
+<body class="hv hv-svc">
 
 <!-- ===== NAV ===== -->
 <nav class="nav" id="mainNav">
@@ -103,7 +104,7 @@
 </nav>
 
 <!-- ===== HERO ===== -->
-<section class="hero hero--inner">
+<section class="hero hero--inner" style="--hero-img:url(/images/hero-ac-installation.webp)">
   <div class="container">
     <div class="hero__content">
       <div class="hero__badge">
@@ -153,7 +154,7 @@
 
 <!-- ===== SERVICE CONTENT ===== -->
 
-<section class="why" style="background:var(--color-white);">
+<section class="hv-band why">
   <div class="container">
     <div class="why__inner">
       <div class="why__content reveal">
@@ -174,7 +175,7 @@
   </div>
 </section>
 
-<section class="process">
+<section class="hv-band hv-band--dark process">
   <div class="container">
     <div class="process__header reveal">
       <span class="section-label section-label--light">How It Works</span>
@@ -191,7 +192,7 @@
   </div>
 </section>
 
-<section class="why" style="background:var(--color-primary);">
+<section class="hv-band why">
   <div class="container">
     <div class="why__header reveal">
       <h2 class="section-title">Brands We Install</h2>
@@ -207,7 +208,7 @@
   </div>
 </section>
 
-<section class="why" style="background:var(--color-white);">
+<section class="hv-band hv-band--soft why">
   <div class="container">
     <div class="two-col-grid" class="reveal">
       <div>
@@ -225,7 +226,7 @@
     </div>
   </div>
 </section>
-<div class="container" style="padding:0 1.5rem 5rem;">
+<div class="container hv-midcta">
   <div class="svc-cta-box reveal">
     <h2>Ready for a New AC System?</h2>
     <p>Free in-home assessment, Manual J load calculation, and written quote. No obligation, no pressure.</p>
@@ -237,7 +238,7 @@
 </div>
 
 <!-- ===== FAQ ===== -->
-<section class="faq">
+<section class="hv-band faq">
   <div class="container">
     <div class="faq__header">
       <span class="section-label">Common Questions</span>
@@ -245,39 +246,15 @@
       <p class="section-subtitle">Answers to the questions Huntsville homeowners ask most about new AC systems.</p>
     </div>
     <div class="faq__list">
-      <div class="faq__item">
-        <button class="faq__question">
-          How long does AC installation take?
-          <div class="faq__icon"><svg viewBox="0 0 24 24" width="14" height="14"><line x1="12" y1="5" x2="12" y2="19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-        </button>
-        <div class="faq__answer">
-          <div class="faq__answer-inner">Most standard AC installations are completed in a single day -- typically 4 to 8 hours depending on complexity. If ductwork modifications are needed or we are installing a complete HVAC system, it may take a full day or occasionally extend into a second day. We give you a realistic timeline before work begins.</div>
-        </div>
-      </div>
-      <div class="faq__item">
-        <button class="faq__question">
-          What size AC do I need?
-          <div class="faq__icon"><svg viewBox="0 0 24 24" width="14" height="14"><line x1="12" y1="5" x2="12" y2="19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-        </button>
-        <div class="faq__answer">
-          <div class="faq__answer-inner">We perform a Manual J load calculation for every installation. This factors in your home's square footage, insulation, window placement and type, ceiling height, and orientation. For Huntsville homes, most residential systems range from 2 to 5 tons. The right size matters more than the brand.</div>
-        </div>
-      </div>
-      <div class="faq__item">
-        <button class="faq__question">
-          Do you offer financing?
-          <div class="faq__icon"><svg viewBox="0 0 24 24" width="14" height="14"><line x1="12" y1="5" x2="12" y2="19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-        </button>
-        <div class="faq__answer">
-          <div class="faq__answer-inner">Yes. We offer 0% APR financing plans for qualified buyers with terms ranging from 12 to 60 months. Applications are processed quickly -- most approvals come back within minutes. We also offer low-interest extended payment plans for larger projects.</div>
-        </div>
-      </div>
+      <details class="faq__item hv-faq"><summary class="faq__question">How long does AC installation take?<span class="faq__icon hv-faq-icon" aria-hidden="true"></span></summary><div class="faq__answer"><div class="faq__answer-inner">Most standard AC installations are completed in a single day -- typically 4 to 8 hours depending on complexity. If ductwork modifications are needed or we are installing a complete HVAC system, it may take a full day or occasionally extend into a second day. We give you a realistic timeline before work begins.</div></div></details>
+      <details class="faq__item hv-faq"><summary class="faq__question">What size AC do I need?<span class="faq__icon hv-faq-icon" aria-hidden="true"></span></summary><div class="faq__answer"><div class="faq__answer-inner">We perform a Manual J load calculation for every installation. This factors in your home's square footage, insulation, window placement and type, ceiling height, and orientation. For Huntsville homes, most residential systems range from 2 to 5 tons. The right size matters more than the brand.</div></div></details>
+      <details class="faq__item hv-faq"><summary class="faq__question">Do you offer financing?<span class="faq__icon hv-faq-icon" aria-hidden="true"></span></summary><div class="faq__answer"><div class="faq__answer-inner">Yes. We offer 0% APR financing plans for qualified buyers with terms ranging from 12 to 60 months. Applications are processed quickly -- most approvals come back within minutes. We also offer low-interest extended payment plans for larger projects.</div></div></details>
     </div>
   </div>
 </section>
 
 <!-- ===== RELATED SERVICES ===== -->
-<section class="related-services">
+<section class="hv-band hv-band--soft related-services">
   <div class="container">
     <div class="related-services__header">
       <span class="section-label">More Services</span>
