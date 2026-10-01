@@ -71,7 +71,7 @@
       y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "vqcd6y8eot");
   </script>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="/css/modern.css?v=20261001">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="/css/modern.css?v=20261001r2">
 <!-- favicon + link preview (tools/link-preview-kit.py) -->
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -218,17 +218,16 @@
 
 <script>
   // Nav scroll effect
-  const header = document.getElementById('siteHeader');
+  const header = document.getElementById('mainNav');
   window.addEventListener('scroll', () => {
     header.classList.toggle('scrolled', window.scrollY > 50);
   }, {passive: true});
 
   // Mobile nav toggle
   const navToggle = document.getElementById('navToggle');
-  const siteNav = document.getElementById('siteNav');
+  const siteNav = document.getElementById('navLinks');
   navToggle.addEventListener('click', () => {
-    siteNav.classList.toggle('mobile-open');
-    document.body.classList.toggle('nav-open');
+    siteNav.classList.toggle('open');
   });
 
   // Smooth scroll

@@ -354,3 +354,29 @@ body.hv .footer__brand-name { font-family: var(--hv-display); }
 }
 @media (prefers-reduced-motion: reduce) { body.hv * { transition: none !important; } }
 body.hv:has(.thankyou) .nav { background: rgba(10,20,36,.96); }
+
+/* ---------- Round 2 (2026-10-01): phone and tablet. Media-scoped only, desktop (>1024px, mouse) unchanged ---------- */
+/* tablets up to 960px (iPad portrait 768-834) use the mobile menu: the desktop nav needs about 925px */
+@media (max-width: 960px) {
+  body.hv .nav__links { display: none; }
+  body.hv .nav__toggle { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; color: #fff; }
+  body.hv .nav__links.open { display: flex; flex-direction: column; align-items: stretch; position: absolute; top: 100%; left: 0; right: 0;
+    background: rgba(10,20,36,.97); backdrop-filter: blur(20px); padding: 12px 24px 24px; gap: 4px; }
+  body.hv .nav__links.open a { display: flex; align-items: center; min-height: 48px; font-size: 1.05rem; }
+  body.hv .nav__links.open .nav__cta { justify-content: center; margin-top: 8px; }
+}
+/* tablet: the old sheet capped the 2-up process grid at 400px wide, squeezing four cards into a narrow column */
+@media (max-width: 960px) { body.hv .process__grid { max-width: none; } }
+/* touch-size tap targets on phones and tablets */
+@media (max-width: 1024px), (hover: none) {
+  body.hv .nav__logo { display: inline-block; min-height: 44px; line-height: 44px; }
+  body.hv .nav__links a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; }
+  body.hv .breadcrumb a, body.hv .hv-crumbs a { display: inline-flex; align-items: center; min-height: 44px; }
+  body.hv a[href^="tel:"]:not(p a, td a, .btn, .nav__cta) { display: inline-flex; align-items: center; min-height: 44px; }
+  body.hv .footer__contact-item { align-items: center; }
+  body.hv .footer__contact-item a { display: inline-flex; align-items: center; min-height: 44px; }
+}
+/* body text at least 15px on phones */
+@media (max-width: 640px) {
+  body.hv #lead-form p[style*="font-size:.8125rem"] { font-size: 15px !important; }
+}
