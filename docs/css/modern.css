@@ -380,3 +380,16 @@ body.hv:has(.thankyou) .nav { background: rgba(10,20,36,.96); }
 @media (max-width: 640px) {
   body.hv #lead-form p[style*="font-size:.8125rem"] { font-size: 15px !important; }
 }
+
+/* ---------- 2026-10-07 ---------- */
+/* A backdrop-filter on the fixed nav made the open phone menu see-through: page text showed behind the links.
+   Solid panel and no blur up to 1100px; desktop keeps the glass nav. */
+@media (max-width: 1100px) {
+  body.hv .nav, body.hv .nav.scrolled { -webkit-backdrop-filter: none; backdrop-filter: none; }
+  body.hv .nav.scrolled { background: #0a1424; }
+  body.hv .nav__links.open { -webkit-backdrop-filter: none; backdrop-filter: none; background: #0a1424; box-shadow: 0 18px 40px rgba(8,17,32,.35); }
+}
+/* before and after photos stack on phones (two 170px columns clipped the captions) */
+@media (max-width: 560px) {
+  body.hv .gallery__grid { grid-template-columns: 1fr !important; }
+}

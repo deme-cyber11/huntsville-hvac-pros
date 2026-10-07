@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#1a1a2e">
+<meta name="theme-color" content="#0e1a2b">
 <title>HVAC Service Request | Huntsville HVAC Pros</title>
 <meta name="description" content="Submit your project details for an accurate estimate. Huntsville HVAC Pros — Licensed & Insured.">
 <link rel="canonical" href="https://huntsvillehvacpros.com/estimate/">
@@ -15,62 +15,74 @@ html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f1f5f9;color:#1e293b;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh}
 a{text-decoration:none;color:inherit}
 button{cursor:pointer;font-family:inherit;border:none}
-.nav{position:sticky;top:0;z-index:100;background:#1a1a2e;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 12px rgba(0,0,0,.15)}
+.nav{position:sticky;top:0;z-index:100;background:#0e1a2b;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 12px rgba(0,0,0,.15)}
 .nav__logo{font-size:1.05rem;font-weight:800;color:#fff;letter-spacing:-.01em}
-.nav__logo span{color:#0ea5e9}
-.nav__cta{background:#0ea5e9;color:#fff;font-weight:700;font-size:.875rem;padding:9px 20px;border-radius:100px;white-space:nowrap}
+.nav__logo span{color:#f97316}
+.nav__cta{background:#ea580c;color:#fff;font-weight:700;font-size:.875rem;padding:9px 20px;border-radius:100px;white-space:nowrap}
 .page{max-width:680px;margin:0 auto;padding:40px 16px 80px}
 .page-header{text-align:center;margin-bottom:32px}
-.page-header__eyebrow{display:inline-block;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#0ea5e9;margin-bottom:10px}
+.page-header__eyebrow{display:inline-block;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#c2410c;margin-bottom:10px}
 .page-header h1{font-size:1.875rem;font-weight:800;color:#0f172a;letter-spacing:-.02em;margin-bottom:8px;line-height:1.2}
 .page-header p{color:#64748b;font-size:.9375rem}
 .card{background:#fff;border-radius:16px;padding:24px;margin-bottom:16px;box-shadow:0 1px 4px rgba(0,0,0,.06),0 4px 16px rgba(0,0,0,.06)}
 .card__title{font-size:.9375rem;font-weight:700;color:#0f172a;margin-bottom:20px;padding-bottom:14px;border-bottom:2px solid #f1f5f9;display:flex;align-items:center;gap:8px}
-.card__title-icon{width:28px;height:28px;background:rgba(14,165,233,0.08);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.card__title-icon svg{width:15px;height:15px;stroke:#0ea5e9;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card__title-icon{width:28px;height:28px;background:rgba(249,115,22,0.08);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.card__title-icon svg{width:15px;height:15px;stroke:#f97316;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 @media(max-width:520px){.row{grid-template-columns:1fr}}
 .field{margin-bottom:16px}
 .field:last-child{margin-bottom:0}
 label{display:block;font-size:.8125rem;font-weight:600;color:#374151;margin-bottom:6px;line-height:1.4}
-label .req{color:#0ea5e9;margin-left:2px}
+label .req{color:#c2410c;margin-left:2px}
 label .hint{font-weight:400;color:#94a3b8}
 input[type=text],input[type=tel],input[type=email],select,textarea{width:100%;padding:11px 14px;border:1.5px solid #e2e8f0;border-radius:10px;background:#fff;color:#1e293b;font-family:'Inter',sans-serif;font-size:.9375rem;transition:border-color .15s,box-shadow .15s;-webkit-appearance:none;appearance:none}
 input::placeholder,textarea::placeholder{color:#94a3b8}
-input:focus,select:focus,textarea:focus{outline:none;border-color:#0ea5e9;box-shadow:0 0 0 3px rgba(14,165,233,0.12)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#f97316;box-shadow:0 0 0 3px rgba(249,115,22,0.12)}
 select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2364748b' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:38px;cursor:pointer}
 textarea{resize:vertical;min-height:88px;line-height:1.6}
 .check-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:4px}
 @media(max-width:420px){.check-grid{grid-template-columns:1fr}}
 .check-item{display:flex;align-items:center;gap:10px;padding:10px 12px;border:1.5px solid #e2e8f0;border-radius:10px;cursor:pointer;transition:all .15s;background:#fafafa;-webkit-tap-highlight-color:transparent}
-.check-item input[type=checkbox]{width:18px;height:18px;min-width:18px;border-radius:5px;accent-color:#0ea5e9;cursor:pointer;padding:0;border:none;box-shadow:none;background:none;-webkit-appearance:checkbox;appearance:checkbox}
+.check-item input[type=checkbox]{width:18px;height:18px;min-width:18px;border-radius:5px;accent-color:#f97316;cursor:pointer;padding:0;border:none;box-shadow:none;background:none;-webkit-appearance:checkbox;appearance:checkbox}
 .check-item input[type=checkbox]:focus{box-shadow:none;border:none}
 .check-item label,.check-item span{font-size:.8125rem;font-weight:500;color:#374151;cursor:pointer;margin:0;line-height:1.3}
-.check-item:has(input:checked){border-color:#0ea5e9;background:rgba(14,165,233,0.05)}
-.check-item:has(input:checked) span{color:#0284c7;font-weight:600}
+.check-item:has(input:checked){border-color:#f97316;background:rgba(249,115,22,0.05)}
+.check-item:has(input:checked) span{color:#c2410c;font-weight:600}
 .upload-zone{border:2px dashed #cbd5e1;border-radius:10px;padding:24px 16px;text-align:center;cursor:pointer;transition:all .15s;background:#f8fafc;margin-top:4px;display:block}
-.upload-zone:hover,.upload-zone:active{border-color:#0ea5e9;background:rgba(14,165,233,0.05)}
+.upload-zone:hover,.upload-zone:active{border-color:#f97316;background:rgba(249,115,22,0.05)}
 .upload-zone input{display:none}
-.upload-zone svg{width:28px;height:28px;stroke:#0ea5e9;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin:0 auto 8px;display:block}
+.upload-zone svg{width:28px;height:28px;stroke:#f97316;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin:0 auto 8px;display:block}
 .upload-zone p{font-size:.875rem;color:#64748b}
 .upload-zone p strong{color:#1e293b;font-weight:600}
-.submit-btn{width:100%;padding:18px;background:#0ea5e9;color:#fff;font-family:'Inter',sans-serif;font-size:1rem;font-weight:700;border-radius:100px;letter-spacing:-.01em;box-shadow:0 4px 16px rgba(14,165,233,0.3);transition:all .2s;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:8px}
-.submit-btn:hover,.submit-btn:active{background:#0284c7;transform:translateY(-1px);box-shadow:0 6px 24px rgba(14,165,233,0.35)}
+.submit-btn{width:100%;padding:18px;background:#ea580c;color:#fff;font-family:'Inter',sans-serif;font-size:1rem;font-weight:700;border-radius:100px;letter-spacing:-.01em;box-shadow:0 4px 16px rgba(249,115,22,0.3);transition:all .2s;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:8px}
+.submit-btn:hover,.submit-btn:active{background:#c2410c;transform:translateY(-1px);box-shadow:0 6px 24px rgba(249,115,22,0.35)}
 .submit-btn svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
 .trust-bar{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:20px;padding-top:16px}
 .trust-item{display:flex;align-items:center;gap:5px;font-size:.75rem;font-weight:600;color:#64748b}
-.trust-item svg{width:14px;height:14px;stroke:#0ea5e9;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.trust-item svg{width:14px;height:14px;stroke:#f97316;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .success{display:none;text-align:center;padding:56px 24px}
-.success__icon{width:64px;height:64px;background:rgba(14,165,233,0.05);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px}
-.success__icon svg{width:32px;height:32px;stroke:#0ea5e9;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.success__icon{width:64px;height:64px;background:rgba(249,115,22,0.05);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px}
+.success__icon svg{width:32px;height:32px;stroke:#f97316;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
 .success h2{font-size:1.5rem;font-weight:800;color:#0f172a;margin-bottom:8px}
 .success p{color:#64748b;font-size:.9375rem}
-.success a{color:#0ea5e9;font-weight:600}
+.success a{color:#c2410c;font-weight:600}
 .footer{text-align:center;padding:32px 16px;font-size:.8125rem;color:#94a3b8}
-.footer a{color:#0ea5e9;font-weight:500}
+.footer a{color:#c2410c;font-weight:500}
 /* Round 2 (2026-10-01): phone and tablet only */
 @media(max-width:640px){.footer{font-size:15px}}
 @media(max-width:1024px),(hover:none){.check-item{min-height:52px}.check-item input[type=checkbox]{width:22px;min-width:22px;height:40px;margin:-9px 0}}
+.nav__logo:hover{opacity:.9}
+/* guide text about estimates: it sat after the closing html tag and rendered unstyled; now a card inside the page */
+.guide{background:#fff;border-radius:16px;padding:28px 24px;margin-top:24px;box-shadow:0 1px 4px rgba(0,0,0,.06),0 4px 16px rgba(0,0,0,.06);color:#334155;font-size:.9375rem}
+.guide h2{font-size:1.15rem;font-weight:800;color:#0f172a;margin:22px 0 8px;line-height:1.3}
+.guide h2:first-child{margin-top:0}
+.guide h3{font-size:1rem;font-weight:700;color:#0f172a;margin:0 0 6px}
+.guide p{margin-bottom:10px}
+.guide ul,.guide ol{padding-left:20px;margin:0 0 10px}
+.guide li{margin-bottom:8px}
+.guide .faq-item{border:1.5px solid #e2e8f0;border-radius:12px;padding:14px 16px;margin-bottom:10px}
+.guide .faq-item p{margin:0}
+.guide .cta-text{font-weight:600;color:#0f172a;margin-top:14px}
 </style>
 <!-- favicon + link preview (tools/link-preview-kit.py) -->
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -88,7 +100,7 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
 <body>
 
 <nav class="nav">
-  <div class="nav__logo">Huntsville <span>HVAC</span> Pros</div>
+  <a href="/" class="nav__logo">Huntsville <span>HVAC</span> Pros</a>
   <a href="tel:2562159287" class="nav__cta">(256) 215-9287</a>
 </nav>
 
@@ -130,9 +142,9 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
         <label for="email">Email Address <span class="req">*</span></label>
         <input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email" maxlength="120">
       </div>
-      <div class="field" style="margin-bottom:0">
+      <div class="field">
         <label for="address">Property Address <span class="req">*</span></label>
-        <input type="text" id="address" name="address" required placeholder="123 Main St, City, State ZIP" autocomplete="address-line1" maxlength="120">
+        <input type="text" id="address" name="address" required placeholder="123 Main St" autocomplete="address-line1" maxlength="120">
       </div>
       <div class="field">
           <label for="city">City <span class="req">*</span></label>
@@ -140,7 +152,7 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
         </div>
         <div class="field">
           <label for="state">State</label>
-          <input onchange="this.value=this.value.trim()" type="text" id="state" name="state" autocomplete="address-level1" maxlength="20" pattern="[A-Za-z .]{2,20}" title="State — 2-letter code or full name">
+          <input onchange="this.value=this.value.trim()" type="text" id="state" name="state" placeholder="AL" autocomplete="address-level1" maxlength="20" pattern="[A-Za-z .]{2,20}" title="State — 2-letter code or full name">
         </div>
         <div class="field">
           <label for="zip">ZIP Code <span class="req">*</span></label>
@@ -191,7 +203,7 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
       </div>
     <div class="field">
       <label for="system_type">System Type</label>
-      <select id="system_type" name="system_type" required>
+      <select id="system_type" name="system_type">
         <option value="">Select if known...</option>
           <option>Central AC + furnace</option>
           <option>Heat pump</option>
@@ -203,7 +215,7 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
     </div>
     <div class="field">
       <label for="system_age">System Age</label>
-      <select id="system_age" name="system_age" required>
+      <select id="system_age" name="system_age">
         <option value="">Select if known...</option>
           <option>Under 5 years</option>
           <option>5–10 years</option>
@@ -213,9 +225,9 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
           <option>Not sure</option>
       </select>
     </div>
-    <div class="field" style="margin-bottom:0">
+    <div class="field">
       <label for="home_sqft">Home Square Footage</label>
-      <select id="home_sqft" name="home_sqft" required>
+      <select id="home_sqft" name="home_sqft">
         <option value="">Select if known...</option>
           <option>Under 1,000 sq ft</option>
           <option>1,000–1,500 sq ft</option>
@@ -264,7 +276,7 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
         Timeline &amp; Budget
       </div>
       <div class="row">
-        <div class="field" style="margin-bottom:0">
+        <div class="field">
           <label for="timeline">Desired Timeline <span class="req">*</span></label>
           <select id="timeline" name="timeline" required>
             <option value="">When do you need this?</option>
@@ -275,7 +287,7 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
             <option>Flexible / just getting quotes</option>
           </select>
         </div>
-        <div class="field" style="margin-bottom:0">
+        <div class="field">
           <label for="budget">Budget Range</label>
           <select id="budget" name="budget">
             <option value="">Select if known...</option>
@@ -302,7 +314,7 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
         <label for="notes">Project Description <span class="req">*</span></label>
         <textarea id="notes" name="notes" rows="4" required placeholder="Describe the project in more detail, any concerns, previous quotes received, access issues, etc." minlength="10" maxlength="2000"></textarea>
       </div>
-      <div class="field" style="margin-bottom:0">
+      <div class="field">
         <label>Photos <span class="hint">(optional — helps us give a more accurate estimate)</span></label>
         <label class="upload-zone" for="photos">
           <input type="file" id="photos" name="photos" multiple accept="image/*">
@@ -339,26 +351,15 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
     <p style='margin-top:8px'>Need us sooner? Call <a href='tel:2562159287'>(256) 215-9287</a></p>
   </div>
 
-</main>
 
-<div class="footer">
-  <p>&copy; 2026 Huntsville HVAC Pros &nbsp;|&nbsp; Licensed &amp; Insured&nbsp;|&nbsp; <a href='tel:2562159287'>(256) 215-9287</a></p>
-</div>
-
-<script>
-if(window.location.hash==='#success'){document.getElementById('form').style.display='none';document.getElementById('success').style.display='block';}
-document.getElementById('photos').addEventListener('change',function(){document.getElementById('upload-label').textContent=this.files.length?this.files.length+' photo'+(this.files.length>1?'s':'')+' selected':'Tap to upload photos';});
-</script>
-<script src="/js/form.js" defer></script>
-</body>
-</html>
+  <section class="guide" aria-label="About HVAC estimates">
 <h2>Professional Estimate in Huntsville, AL</h2>
 <p>Securing a professional estimate for your HVAC needs is the crucial first step towards ensuring lasting comfort and efficiency in your Huntsville home or business. At Huntsville HVAC Pros, we understand that whether you're facing a sudden breakdown, planning a much-needed upgrade, or considering a new installation, transparency and clarity are paramount. Our detailed estimates provide you with a comprehensive understanding of the proposed work, materials, and costs involved, eliminating guesswork and preventing unexpected surprises. For Huntsville residents, where temperatures swing from sweltering summers to brisk winters, having a reliable and accurately quoted HVAC system is not just a convenience—it's a necessity. We empower you to make informed decisions about your property’s heating and cooling, ensuring optimal performance and peace of mind.</p>
 
-<h2>What Is Estimate?</h2>
+<h2>What Is an HVAC Estimate?</h2>
 <p>An HVAC estimate is a comprehensive, itemized breakdown of the anticipated costs for a specific heating, ventilation, or air conditioning service, be it a repair, replacement, or new installation. It goes beyond a simple quote by detailing the scope of work, including labor hours, required parts (e.g., compressor, coils, furnace igniter, thermostat), refrigerant, and any necessary permits or specialized equipment. Our estimates are meticulously prepared after a thorough assessment of your existing system, the unique demands of your Huntsville property, and your specific comfort goals. We consider factors like system age, efficiency ratings, ductwork integrity, and load requirements to recommend the most effective and energy-efficient solutions, presenting all technical information in an accessible manner.</p>
 
-<h2>Benefits of Professional Estimate</h2>
+<h2>Benefits of a Professional Estimate</h2>
 <ul>
 <li><strong>Complete Financial Transparency:</strong> A professional estimate from Huntsville HVAC Pros provides a clear, itemized breakdown of all potential costs before any work begins. This transparency allows Huntsville homeowners to budget effectively and understand precisely where their investment is going, preventing any hidden fees or unexpected charges down the line.</li>
 <li><strong>Informed Decision-Making:</strong> With a detailed estimate, you receive a clear scope of work, including recommended equipment, parts, and labor, empowering you to make educated choices. You can compare options, understand the long-term benefits of different systems or repairs, and confidently select the best solution for your Huntsville property's comfort and efficiency needs.</li>
@@ -375,12 +376,27 @@ document.getElementById('photos').addEventListener('change',function(){document.
 <li><strong>Review & Q&A:</strong> We present the detailed estimate to you, explaining each line item and answering any questions you may have in a straightforward manner. Our goal is to empower you with all the necessary information to make an informed decision for your Huntsville property’s heating and cooling future.</li>
 </ol>
 
-<h2>Why Huntsville, AL Properties Need Estimate</h2>
+<h2>Why Huntsville, AL Homes Need a Professional Estimate</h2>
 <p>Huntsville, AL, experiences a unique climate characterized by long, hot, and humid summers, coupled with moderately cold winters, putting significant strain on HVAC systems year-round. This demanding environment makes professional HVAC estimates particularly crucial for homeowners in the Rocket City. Accurately sizing and installing an HVAC unit is vital here; an undersized system will struggle during peak summer heat, while an oversized one will cycle inefficiently. Furthermore, the high humidity can exacerbate indoor air quality issues and affect system longevity without proper ventilation or dehumidification. Many Huntsville properties, from historic homes to modern developments, vary in construction and insulation, necessitating a personalized assessment. A detailed estimate accounts for these local nuances, ensuring your HVAC solution is perfectly suited to Huntsville’s climate and your home's specific requirements, guaranteeing comfort and energy efficiency.</p>
 
-<h2>Common Questions About Estimate</h2>
-<div class="faq-item"><h3>How much does Estimate cost in Huntsville, AL?</h3><p>At Huntsville HVAC Pros, we proudly offer free estimates for new HVAC system installations and major replacements in Huntsville, AL. For diagnostic services related to existing system repairs, there might be a nominal service call fee, typically ranging from $79-$129, which is often waived if you proceed with the recommended repair. We believe in upfront pricing and providing value, ensuring you understand all potential costs before committing to any service.</p></div>
-<div class="faq-item"><h3>How long does Estimate take?</h3><p>The on-site portion of our estimate process typically takes between 30 to 90 minutes, depending on the complexity of your HVAC system and the extent of the assessment required. Our technicians work efficiently to evaluate your needs thoroughly. You can expect to receive your detailed, written estimate either immediately after the visit or within 24-48 hours, ensuring a prompt response for your Huntsville home.</p></div>
-<div class="faq-item"><h3>How do I know if I need Estimate?</h3><p>You likely need an HVAC estimate if your system is over 10-15 years old, frequently breaks down, or your energy bills have inexplicably spiked. Other signs include uneven heating or cooling throughout your Huntsville home, strange noises or odors emanating from your unit, or if you're planning a home renovation that might impact your current HVAC setup. Don't wait for a complete system failure; proactive assessment can save you money and discomfort.</p></div>
+<h2>Common Questions About Estimates</h2>
+<div class="faq-item"><h3>How much does an estimate cost in Huntsville, AL?</h3><p>At Huntsville HVAC Pros, we proudly offer free estimates for new HVAC system installations and major replacements in Huntsville, AL. For diagnostic services related to existing system repairs, there might be a nominal service call fee, typically $75 to $150, which is credited toward the repair if you proceed with the recommended repair. We believe in upfront pricing and providing value, ensuring you understand all potential costs before committing to any service.</p></div>
+<div class="faq-item"><h3>How long does an estimate take?</h3><p>The on-site portion of our estimate process typically takes between 30 to 90 minutes, depending on the complexity of your HVAC system and the extent of the assessment required. Our technicians work efficiently to evaluate your needs thoroughly. You can expect to receive your detailed, written estimate either immediately after the visit or within 24-48 hours, ensuring a prompt response for your Huntsville home.</p></div>
+<div class="faq-item"><h3>How do I know if I need an estimate?</h3><p>You likely need an HVAC estimate if your system is over 10-15 years old, frequently breaks down, or your energy bills have inexplicably spiked. Other signs include uneven heating or cooling throughout your Huntsville home, strange noises or odors emanating from your unit, or if you're planning a home renovation that might impact your current HVAC setup. Don't wait for a complete system failure; proactive assessment can save you money and discomfort.</p></div>
 
-<p class="cta-text">Ready to schedule Estimate in Huntsville, AL? Contact Huntsville HVAC Pros today for a free estimate. We serve the entire Huntsville, AL area with fast scheduling and guaranteed results.</p>
+<p class="cta-text">Ready to schedule an estimate in Huntsville, AL? Contact Huntsville HVAC Pros today for a free estimate. We serve the entire Huntsville, AL area with fast scheduling and guaranteed results.</p>
+  </section>
+
+</main>
+
+<div class="footer">
+  <p>&copy; 2026 Huntsville HVAC Pros &nbsp;|&nbsp; Licensed &amp; Insured&nbsp;|&nbsp; <a href='tel:2562159287'>(256) 215-9287</a></p>
+</div>
+
+<script>
+if(window.location.hash==='#success'){document.getElementById('form').style.display='none';document.getElementById('success').style.display='block';}
+document.getElementById('photos').addEventListener('change',function(){document.getElementById('upload-label').textContent=this.files.length?this.files.length+' photo'+(this.files.length>1?'s':'')+' selected':'Tap to upload photos';});
+</script>
+<script src="/js/form.js" defer></script>
+</body>
+</html>
