@@ -98,7 +98,7 @@
       <li>To improve our website and services based on usage patterns</li>
       <li>To communicate important updates about our services</li>
     </ul>
-    <p>We do not sell, rent, or share your personal information with third parties for marketing purposes.</p>
+    <p>When you request a quote, fill out a form or call us, we send your request and your contact details (name, phone number, email and address) to an independent local contractor who serves your area, so they can contact you about your project. That contractor may pay us a fee for the referral. If they cannot take the job, we may pass your request to another local contractor. Before a contractor takes the job, other local contractors may see a description of the work, any photos you send, your first name and your street, but not your last name, house number, phone number or email. We do not sell your information for unrelated marketing.</p>
 
     <h2>Cookies</h2>
     <p>Our website uses cookies and similar technologies to enhance your browsing experience and collect usage data. Cookies are small text files stored on your device when you visit our website. You can control cookies through your browser settings, though disabling cookies may affect some website functionality.</p>
@@ -112,7 +112,7 @@
     <p>We use the following third-party services that may collect data when you visit our website:</p>
     <ul>
       <li><strong>Microsoft Clarity:</strong> We use Microsoft Clarity to understand how users interact with our website through session recordings and heatmaps. Clarity collects usage data including mouse movements, clicks, and scroll behavior. This data is anonymized and does not include personal information. For more information, see <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener">Microsoft's Privacy Statement</a>.</li>
-      <li><strong>Contact and estimate forms:</strong> When you submit a form on this site, your name, phone number, email, and message are sent securely to our lead-management system so we can respond to your request. We do not sell this information.</li>
+      <li><strong>Contact and estimate forms:</strong> When you submit a form on this site, your name, phone number, email, and message are sent securely to our lead-management system so we can respond to your request. Your request and contact details go to an independent local contractor who serves your area, so they can contact you about your project.</li>
       <li><strong>Google Fonts:</strong> We use Google Fonts to display typography on our website. Google may collect usage data when fonts are loaded. For more information, see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
     </ul>
 
@@ -224,5 +224,8 @@ if (revealEls.length) {
   revealEls.forEach(el => observer.observe(el));
 }
 </script>
+<!-- itd-d24: page attribution for leads and calls, managed by tools/page-attribution-plan.py -->
+<script>(function(){var A='https://lead-manager-api.irontigerdigital.workers.dev';function f(){var fs=document.querySelectorAll('form');for(var i=0;i<fs.length;i++){var x=fs[i],a=x.getAttribute('action')||'';if(a&&a.indexOf('/ingest')<0)continue;var h=x.querySelector('input[name="page_url"]');if(!h){h=document.createElement('input');h.type='hidden';h.name='page_url';x.appendChild(h);}h.value=location.pathname;}}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',f);else f();document.addEventListener('click',function(e){var t=e.target&&e.target.closest?e.target.closest('a[href^="tel:"]'):null;if(!t||!navigator.sendBeacon)return;try{navigator.sendBeacon(A+'/track/call-click',JSON.stringify({site:location.hostname.replace(/^www\./,''),page_path:location.pathname,tel:t.getAttribute('href')}));}catch(_){}},true);})();</script>
+<!-- /itd-d24 -->
 </body>
 </html>
